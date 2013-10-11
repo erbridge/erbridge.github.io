@@ -7,6 +7,18 @@
 	<link href='http://fonts.googleapis.com/css?family=Bubbler+One' rel='stylesheet' type='text/css'>
 	<link href="stylesheets/main.css" rel="stylesheet" type="text/css">
 
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script>
+
+		$(function() {
+			$(".main-content").accordion({
+				header: ".section-title"
+			});
+		});
+
+	</script>
+
 </head>
 <body>
 
@@ -21,7 +33,15 @@
 
 	<main class="main-content">
 
-		<div class="main-content-text">Some text.</div>
+		<div class="section">
+			<div class="section-title">A Header</div>
+			<div class="section-body">Some text.</div>
+		</div>
+
+		<div class="section">
+			<div class="section-title">Another Header</div>
+			<div class="section-body">Some more text.</div>
+		</div>
 
 	</main>
 
