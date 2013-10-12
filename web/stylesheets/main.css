@@ -56,4 +56,6 @@ body {
 
 .section-body {
     background-color: #335;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
