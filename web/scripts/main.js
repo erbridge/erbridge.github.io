@@ -1,9 +1,10 @@
-function setAllSectionBodyMaxHeights(isOnResize) {
+function setAllSectionBodyMaxHeights(minHeight, isOnResize) {
 
-    var sectionBodyMaxHeight =  $(window).height() - ($(".header").outerHeight(true));
+    var bodyOverflowYValue   = "hidden";
+    var sectionBodyMaxHeight = $(window).height() - ($(".header").outerHeight(true));
 
     if(!isOnResize) {
-        // FIXME: The header outerHeight seems to be off by 9 pixels during initial setup.
+        // FIXME: The header outerHeight seems to be off by 9 pixels during initial setup, but not during resizing.
         sectionBodyMaxHeight -= 9;
     }
 
@@ -16,9 +17,16 @@ function setAllSectionBodyMaxHeights(isOnResize) {
         }
     });
 
+    if(sectionBodyMaxHeight < minHeight) {
+        bodyOverflowYValue   = "auto";
+        sectionBodyMaxHeight = minHeight;
+    }
+
     $(".section-body").each(function() {
         $(this).css("max-height", sectionBodyMaxHeight);
     });
+
+    $("body").css("overflow-y", bodyOverflowYValue);
 }
 
 $(function() {
@@ -30,10 +38,11 @@ $(function() {
         heightStyle: "content"
     });
 
-    // FIXME: This doesn't seem to work if the window is already smaller than the size of the page.
-    setAllSectionBodyMaxHeights(false);
+    var minSectionBodyMaxHeight = 100;
+
+    setAllSectionBodyMaxHeights(minSectionBodyMaxHeight, false);
 
     $(window).resize(function() {
-        setAllSectionBodyMaxHeights(true);
+        setAllSectionBodyMaxHeights(minSectionBodyMaxHeight, true);
     });
 });
