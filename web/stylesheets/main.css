@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background-color: #335;
+	background-color: #113;
 	font-family: 'Titillium Web', sans-serif;
 	color: white;
 }
@@ -14,7 +14,6 @@ body {
 }
 
 .header {
-	background-color: #113;
 	padding-top: 32px;
 	padding-bottom: 32px;
 }
@@ -25,14 +24,36 @@ body {
 
 .header-title {
 	font-family: 'Bubbler One', sans-serif;
-	font-size: 48px;
+	font-size: 38pt;
 }
 
 .header-subtitle {
-	font-size: 26px;
+	font-size: 22pt;
+}
+
+.header-body {
+	width: 357px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-indent: -.4em;
+}
+
+.header-body > .author-tag {
+	margin-left: 8em;
+	font-style: italic;
 }
 
 .section-title {
-	background-color: #113;
-	font-size: 24px;
+	text-align: center;
+	font-size: 20pt;
+}
+
+.section-title:focus {
+	background-color: #225;
+	outline: 0;
+}
+
+.section-body {
+	background-color: #335;
 }
