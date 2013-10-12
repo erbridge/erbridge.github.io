@@ -1,11 +1,19 @@
-function setAllSectionBodyMaxHeights() {
+function setAllSectionBodyMaxHeights(isOnResize) {
 
-    // FIXME: The header outerHeight seems to be off by 9 pixels.
-    var sectionBodyMaxHeight =  $(window).height() - ($(".header").outerHeight(true) + 9);
+    var sectionBodyMaxHeight =  $(window).height() - ($(".header").outerHeight(true));
+
+    if(!isOnResize) {
+        // FIXME: The header outerHeight seems to be off by 9 pixels during initial setup.
+        sectionBodyMaxHeight -= 9;
+    }
 
     $(".section-title").each(function() {
-        // FIXME: Each of these are off by 3 pixels.
-        sectionBodyMaxHeight -= $(this).outerHeight(true) + 3;
+        sectionBodyMaxHeight -= $(this).outerHeight(true);
+
+        if(!isOnResize) {
+            // FIXME: Each of these are off by 3 pixels.
+            sectionBodyMaxHeight -= 3;
+        }
     });
 
     $(".section-body").each(function() {
@@ -23,11 +31,9 @@ $(function() {
     });
 
     // FIXME: This doesn't seem to work if the window is already smaller than the size of the page.
-    setAllSectionBodyMaxHeights();
+    setAllSectionBodyMaxHeights(false);
 
     $(window).resize(function() {
-        // FIXME: Set the section sizes without a reload.
-        // Reload the page to fix the section sizes.
-        location.reload(false);
+        setAllSectionBodyMaxHeights(true);
     });
 });
