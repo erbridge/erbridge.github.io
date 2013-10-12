@@ -1,59 +1,59 @@
 body {
-	margin: 0;
-	background-color: #113;
-	font-family: 'Titillium Web', sans-serif;
-	color: white;
+    margin: 0;
+    background-color: #113;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
 }
 
 .heading {
-	font-family: 'Dosis', sans-serif;
+    font-family: 'Dosis', sans-serif;
 }
 
 .monospace {
-	font-family: 'PT Mono', sans-serif;
+    font-family: 'PT Mono', sans-serif;
 }
 
 .header {
-	padding-top: 32px;
-	padding-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-titles {
-	text-align: center;
+    text-align: center;
 }
 
 .header-title {
-	font-family: 'Bubbler One', sans-serif;
-	font-size: 38pt;
+    font-family: 'Bubbler One', sans-serif;
+    font-size: 38pt;
 }
 
 .header-subtitle {
-	font-size: 22pt;
+    font-size: 22pt;
 }
 
 .header-body {
-	width: 357px;
-	margin-top: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	text-indent: -.4em;
+    width: 357px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-indent: -.4em;
 }
 
 .header-body > .author-tag {
-	margin-left: 8em;
-	font-style: italic;
+    margin-left: 8em;
+    font-style: italic;
 }
 
 .section-title {
-	text-align: center;
-	font-size: 20pt;
+    text-align: center;
+    font-size: 20pt;
 }
 
 .section-title:focus {
-	background-color: #225;
-	outline: 0;
+    background-color: #225;
+    outline: 0;
 }
 
 .section-body {
-	background-color: #335;
+    background-color: #335;
 }
