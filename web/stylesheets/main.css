@@ -51,12 +51,18 @@ body {
     font-size: 20pt;
 }
 
-.section-body {
+.section-body-wrapper {
     background-color: #533;
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-transition: background-color 400ms;
     transition: background-color 400ms;
+}
+
+.section-body {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {

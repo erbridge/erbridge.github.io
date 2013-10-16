@@ -40,7 +40,7 @@ function setColourScheme(currentColourScheme) {
     });
 
     // FIXME: Animate this transition with the accordion.
-    $(".section-body").each(function() {
+    $(".section-body-wrapper").each(function() {
         $(this).css({
             "background-color": newColourScheme.sectionBody
         });
@@ -50,7 +50,7 @@ function setColourScheme(currentColourScheme) {
 
 }
 
-function setAllSectionBodyMaxHeights(minHeight, isOnResize) {
+function setAllSectionBodyMaxHeights(minMaxHeight, isOnResize) {
 
     var bodyOverflowYValue   = "hidden";
     var sectionBodyMaxHeight = $(window).height() - ($(".header").outerHeight(true));
@@ -69,12 +69,12 @@ function setAllSectionBodyMaxHeights(minHeight, isOnResize) {
         }
     });
 
-    if(sectionBodyMaxHeight < minHeight) {
+    if(sectionBodyMaxHeight < minMaxHeight) {
         bodyOverflowYValue   = "auto";
-        sectionBodyMaxHeight = minHeight;
+        sectionBodyMaxHeight = minMaxHeight;
     }
 
-    $(".section-body").each(function() {
+    $(".section-body-wrapper").each(function() {
         $(this).css("max-height", sectionBodyMaxHeight);
     });
 
@@ -106,7 +106,7 @@ $(function() {
         });
     });
 
-    $(".section-body").each(function() {
+    $(".section-body-wrapper").each(function() {
         $(this).css({
             "background-color": colourScheme.sectionBody
         });
