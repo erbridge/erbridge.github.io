@@ -3,6 +3,7 @@ body {
     background-color: #311;
     font-family: 'Titillium Web', sans-serif;
     color: #fff;
+    -webkit-transition: background-color 400ms, color 400ms;
     transition: background-color 400ms, color 400ms;
 }
 
@@ -54,5 +55,6 @@ body {
     background-color: #533;
     overflow-x: hidden;
     overflow-y: auto;
+    -webkit-transition: background-color 400ms;
     transition: background-color 400ms;
 }
