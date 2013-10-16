@@ -29,7 +29,7 @@ function setColourScheme(currentColourScheme) {
         newColourScheme = pickColourScheme();
     }
 
-    $("body").stop().animate({
+    $("body").css({
         "background-color": newColourScheme.body,
         "color": newColourScheme.text
     });

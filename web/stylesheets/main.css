@@ -3,6 +3,7 @@ body {
     background-color: #113;
     font-family: 'Titillium Web', sans-serif;
     color: white;
+    transition: background-color 400ms, color 400ms;
 }
 
 .heading {
@@ -53,4 +54,5 @@ body {
     background-color: #335;
     overflow-x: hidden;
     overflow-y: auto;
+    transition: background-color 400ms;
 }
