@@ -13,7 +13,22 @@ ColourScheme = {
         text: "#fff",
         body: "#311",
         sectionBody: "#533"
-    }
+    },
+    // LIGHT_GREEN: {
+    //     text: "#000",
+    //     body: "#585",
+    //     sectionBody: "#8b8"
+    // },
+    // LIGHT_PURPLE: {
+    //     text: "#000",
+    //     body: "#558",
+    //     sectionBody: "#88b"
+    // },
+    // LIGHT_RED: {
+    //     text: "#000",
+    //     body: "#855",
+    //     sectionBody: "#b88"
+    // }
 };
 
 function pickColourScheme() {
