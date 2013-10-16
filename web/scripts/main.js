@@ -79,7 +79,7 @@ function setAllSectionBodyMaxHeights(minHeight, isOnResize) {
 
 $(function() {
 
-    var colourScheme = ColourScheme.DARK_PURPLE;
+    var colourScheme = ColourScheme.DARK_RED;
 
     $("body").css({
         "background-color": colourScheme.body,

@@ -1,8 +1,8 @@
 body {
     margin: 0;
-    background-color: #113;
+    background-color: #311;
     font-family: 'Titillium Web', sans-serif;
-    color: white;
+    color: #fff;
     transition: background-color 400ms, color 400ms;
 }
 
@@ -51,7 +51,7 @@ body {
 }
 
 .section-body {
-    background-color: #335;
+    background-color: #533;
     overflow-x: hidden;
     overflow-y: auto;
     transition: background-color 400ms;
