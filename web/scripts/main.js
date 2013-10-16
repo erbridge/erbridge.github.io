@@ -1,4 +1,9 @@
 ColourScheme = {
+    DARK_GREEN: {
+        text: "#fff",
+        body: "#131",
+        sectionBody: "#353"
+    },
     DARK_PURPLE: {
         text: "#fff",
         body: "#113",
