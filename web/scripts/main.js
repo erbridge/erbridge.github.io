@@ -112,6 +112,12 @@ $(function() {
         });
     });
 
+    $("a").each(function() {
+        $(this).css({
+            "color": colourScheme.text
+        });
+    });
+
     $(".main-content").accordion({
         active: false,
         beforeActivate: function(event, ui) {
