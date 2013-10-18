@@ -67,7 +67,7 @@ function setColourScheme(currentColourScheme) {
         });
     });
 
-    $(".social-button, .email-button").css({
+    $(".repo-button, .social-button, .email-button").css({
         "background-color": newColourScheme.button,
         "color": newColourScheme.buttonText
     });
@@ -144,7 +144,7 @@ $(function() {
         });
     });
 
-    $(".social-button, .email-button").css({
+    $(".repo-button, .social-button, .email-button").css({
         "background-color": colourScheme.button,
         "color": colourScheme.buttonText
     });
