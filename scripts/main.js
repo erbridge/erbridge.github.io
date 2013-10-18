@@ -2,17 +2,23 @@ ColourScheme = {
     DARK_GREEN: {
         text: "#fff",
         body: "#131",
-        sectionBody: "#353"
+        sectionBody: "#353",
+        button: "#df0",
+        buttonText: "#000"
     },
     DARK_PURPLE: {
         text: "#fff",
         body: "#113",
-        sectionBody: "#335"
+        sectionBody: "#335",
+        button: "#0df",
+        buttonText: "#000"
     },
     DARK_RED: {
         text: "#fff",
         body: "#311",
-        sectionBody: "#533"
+        sectionBody: "#533",
+        button: "#fd0",
+        buttonText: "#000"
     },
     // LIGHT_GREEN: {
     //     text: "#000",
@@ -61,6 +67,11 @@ function setColourScheme(currentColourScheme) {
         });
     });
 
+    $(".social-button, .email-button").css({
+        "background-color": newColourScheme.button,
+        "color": newColourScheme.buttonText
+    });
+
     return newColourScheme;
 
 }
@@ -106,6 +117,12 @@ $(function() {
         "color": colourScheme.text
     });
 
+    $("a").each(function() {
+        $(this).css({
+            "color": colourScheme.text
+        });
+    });
+
     $(".section-title").each(function() {
         $(this).focusin(function() {
             $(this).css({
@@ -127,10 +144,9 @@ $(function() {
         });
     });
 
-    $("a").each(function() {
-        $(this).css({
-            "color": colourScheme.text
-        });
+    $(".social-button, .email-button").css({
+        "background-color": colourScheme.button,
+        "color": colourScheme.buttonText
     });
 
     $(".main-content").accordion({
