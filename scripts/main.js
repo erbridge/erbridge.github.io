@@ -60,25 +60,35 @@
             newColourScheme = pickColourScheme();
         }
 
+        setColours(newColourScheme);
+
+        return newColourScheme;
+
+    }
+
+    function setColours(colourScheme) {
         $("body").css({
-            "background-color": newColourScheme.body,
-            "color": newColourScheme.text
+            "background-color": colourScheme.body,
+            "color": colourScheme.text
+        });
+
+        $("a").each(function() {
+            $(this).css({
+                "color": colourScheme.text
+            });
         });
 
         // FIXME: Animate this transition with the accordion.
         $(".section-body-wrapper").each(function() {
             $(this).css({
-                "background-color": newColourScheme.sectionBody
+                "background-color": colourScheme.sectionBody
             });
         });
 
         $(".repo-button, .social-button, .email-button").css({
-            "background-color": newColourScheme.button,
-            "color": newColourScheme.buttonText
+            "background-color": colourScheme.button,
+            "color": colourScheme.buttonText
         });
-
-        return newColourScheme;
-
     }
 
     function setAllSectionBodyMaxHeights(minMaxHeight, isOnResize) {
@@ -117,16 +127,7 @@
 
         var colourScheme = ColourScheme.DARK_RED;
 
-        $("body").css({
-            "background-color": colourScheme.body,
-            "color": colourScheme.text
-        });
-
-        $("a").each(function() {
-            $(this).css({
-                "color": colourScheme.text
-            });
-        });
+        setColours(colourScheme);
 
         $(".section-title").each(function() {
             $(this).focusin(function() {
@@ -141,17 +142,6 @@
                     "font-weight": "normal"
                 });
             });
-        });
-
-        $(".section-body-wrapper").each(function() {
-            $(this).css({
-                "background-color": colourScheme.sectionBody
-            });
-        });
-
-        $(".repo-button, .social-button, .email-button").css({
-            "background-color": colourScheme.button,
-            "color": colourScheme.buttonText
         });
 
         $(".main-content").accordion({
