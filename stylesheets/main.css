@@ -1,15 +1,18 @@
 body {
     margin: 0;
-    background-color: #311;
+    background-color: #282a2e;
     font-family: 'Titillium Web', sans-serif;
-    color: #fff;
+    color: #81a2be;
     -webkit-transition: background-color 400ms, color 400ms;
     transition: background-color 400ms, color 400ms;
 }
 
 a {
+    color: #e0e0e0;
     font-weight: bold;
     text-decoration: none;
+    -webkit-transition: color 400ms;
+    transition: color 400ms;
 }
 
 .heading {
@@ -32,10 +35,16 @@ a {
 .header-title {
     font-family: 'Bubbler One', sans-serif;
     font-size: 38pt;
+    color: #b5bd68;
+    -webkit-transition: color 400ms;
+    transition: color 400ms;
 }
 
 .header-subtitle {
     font-size: 22pt;
+    color: #f0c674;
+    -webkit-transition: color 400ms;
+    transition: color 400ms;
 }
 
 .header-body {
@@ -54,10 +63,11 @@ a {
 .section-title {
     text-align: center;
     font-size: 20pt;
+    color: #a3685a;
 }
 
 .section-body-wrapper {
-    background-color: #533;
+    background-color: #373b41;
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-transition: background-color 400ms;
@@ -80,8 +90,8 @@ a {
 .email-button {
     padding-left: 5px;
     padding-right: 5px;
-    background-color: #fd0;
-    color: #000;
+    background-color: #b5bd68;
+    color: #373b41;
     -webkit-transition: background-color 400ms, color 400ms;
     transition: background-color 400ms, color 400ms;
 }

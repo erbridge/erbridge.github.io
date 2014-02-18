@@ -4,42 +4,50 @@
     "use strict";
 
     var ColourScheme = {
-        DARK_GREEN: {
-            text: "#fff",
-            body: "#131",
-            sectionBody: "#353",
-            button: "#df0",
-            buttonText: "#000"
+        TOMORROW: {
+            body:               "#282a2e",
+            text:               "#81a2be",
+            linkText:           "#e0e0e0",
+            titleText:          "#b5bd68",
+            subtitleText:       "#f0c674",
+            sectionHeadingText: "#a3685a",
+            sectionBody:        "#373b41",
+            button:             "#b5bd68",
+            buttonText:         "#373b41"
         },
-        DARK_PURPLE: {
-            text: "#fff",
-            body: "#113",
-            sectionBody: "#335",
-            button: "#0df",
-            buttonText: "#000"
+        EIGHTIES: {
+            body:               "#2d2d2d",
+            text:               "#6699cc",
+            linkText:           "#e8e6df",
+            titleText:          "#99cc99",
+            subtitleText:       "#ffcc66",
+            sectionHeadingText: "#d27b53",
+            sectionBody:        "#393939",
+            button:             "#99cc99",
+            buttonText:         "#393939"
         },
-        DARK_RED: {
-            text: "#fff",
-            body: "#311",
-            sectionBody: "#533",
-            button: "#fd0",
-            buttonText: "#000"
+        RAILSCASTS: {
+            body:               "#272935",
+            text:               "#6d9cbe",
+            linkText:           "#d4cfc9",
+            titleText:          "#519f50",
+            subtitleText:       "#ffc66d",
+            sectionHeadingText: "#da4939",
+            sectionBody:        "#3a4055",
+            button:             "#519f50",
+            buttonText:         "#3a4055"
         },
-        // LIGHT_GREEN: {
-        //     text: "#000",
-        //     body: "#585",
-        //     sectionBody: "#8b8"
-        // },
-        // LIGHT_PURPLE: {
-        //     text: "#000",
-        //     body: "#558",
-        //     sectionBody: "#88b"
-        // },
-        // LIGHT_RED: {
-        //     text: "#000",
-        //     body: "#855",
-        //     sectionBody: "#b88"
-        // }
+        MOCHA: {
+            body:               "#3B3228",
+            text:               "#8ab3b5",
+            linkText:           "#b8afad",
+            titleText:          "#beb55b",
+            subtitleText:       "#f4bc87",
+            sectionHeadingText: "#cb6077",
+            sectionBody:        "#534636",
+            button:             "#beb55b",
+            buttonText:         "#534636"
+        }
     };
 
     function pickColourScheme() {
@@ -67,28 +75,38 @@
     }
 
     function setColours(colourScheme) {
+
         $("body").css({
             "background-color": colourScheme.body,
             "color": colourScheme.text
         });
 
-        $("a").each(function() {
-            $(this).css({
-                "color": colourScheme.text
-            });
+        $("a").css({
+            "color": colourScheme.linkText
+        });
+
+        $(".header-title").css({
+            "color": colourScheme.titleText
+        });
+
+        $(".header-subtitle").css({
+            "color": colourScheme.subtitleText
+        });
+
+        $(".section-title").css({
+            "color": colourScheme.sectionHeadingText
         });
 
         // FIXME: Animate this transition with the accordion.
-        $(".section-body-wrapper").each(function() {
-            $(this).css({
-                "background-color": colourScheme.sectionBody
-            });
+        $(".section-body-wrapper").css({
+            "background-color": colourScheme.sectionBody
         });
 
         $(".repo-button, .social-button, .email-button").css({
             "background-color": colourScheme.button,
             "color": colourScheme.buttonText
         });
+
     }
 
     function setAllSectionBodyMaxHeights(minMaxHeight, isOnResize) {
@@ -125,7 +143,7 @@
 
     $(function() {
 
-        var colourScheme = ColourScheme.DARK_RED;
+        var colourScheme = ColourScheme.TOMORROW;
 
         setColours(colourScheme);
 
