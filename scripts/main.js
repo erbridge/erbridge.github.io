@@ -26,17 +26,17 @@
             button:             "#99cc99",
             buttonText:         "#393939"
         },
-        RAILSCASTS: {
-            body:               "#272935",
-            text:               "#6d9cbe",
-            linkText:           "#d4cfc9",
-            titleText:          "#519f50",
-            subtitleText:       "#ffc66d",
-            sectionHeadingText: "#da4939",
-            sectionBody:        "#3a4055",
-            button:             "#519f50",
-            buttonText:         "#3a4055"
-        },
+        // RAILSCASTS: {
+        //     body:               "#272935",
+        //     text:               "#6d9cbe",
+        //     linkText:           "#d4cfc9",
+        //     titleText:          "#519f50",
+        //     subtitleText:       "#ffc66d",
+        //     sectionHeadingText: "#da4939",
+        //     sectionBody:        "#3a4055",
+        //     button:             "#519f50",
+        //     buttonText:         "#3a4055"
+        // },
         MOCHA: {
             body:               "#3B3228",
             text:               "#8ab3b5",
