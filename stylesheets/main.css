@@ -64,6 +64,7 @@ a {
     text-align: center;
     font-size: 20pt;
     color: #a3685a;
+    cursor: pointer;
 }
 
 .section-body-wrapper {
