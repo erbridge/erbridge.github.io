@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/erbridge
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://erbridge.co.uk
+  * I am erbridge (https://keybase.io/erbridge) on keybase.
+  * I have a public key with fingerprint BDE1 A98B 194A 2C9D ED1A  40FD 82DE EF4C 369B 081F
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "bde1a98b194a2c9ded1a40fd82deef4c369b081f",
+            "host": "keybase.io",
+            "key_id": "82deef4c369b081f",
+            "uid": "f753ebdf20e3fac13b7f34694243f300",
+            "username": "erbridge"
+        },
+        "service": {
+            "hostname": "erbridge.co.uk",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1398778904,
+    "expire_in": 157680000,
+    "prev": "a103509aacef1193c492c007be08f0b6a8a1cc4da100eec44af2d4da0a4437e3",
+    "seqno": 2,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.12
+Comment: https://keybase.io/crypto
+
+yMHpAnicbZFfSBRrGMZ388+WZPQXxIv+jIKVm3wz87k7s5pFuGhCnDTNqGj7Zuab
+dbDdWWdn9xxdNLWQbuRcCAeTSpAitN3MY8rJi3UR3ZRU9kaMgiRB0E4kKIVQkN9I
+3UTfzfA+7+953nl5x9OTTGlml+dv56O14l7zq9h6wHTBFc4IUYIq1VOOEFWLtz6y
+4nVjzacpXp1yUIKEacRzAs1DxIi8hCUaQSBLHCNhLEORtfEC4GiZslI1qt9wkBgB
++XGeohKNFC5FIupv+MBWQ7bns1iQZAZgVkYizQp2mYU2HjKQlVkADNCPNS/yYEJj
+TdAUyY2pRitF1KAiEjW0NfoXIk9U8wK1xO3TVF0V1RukV6PrPodh1et9BvsnFlw/
+UlyC4pXI5sQQxJpfUb2UgyakqCtGLM3ynN3O8QBaKfyXT9GwSzGIfLuNA+QZY3CQ
+RCIasPmAR0jEMk3zrAh5RgTALmDAyUCwIQ7RogglwgGMRQiRzEikBAhC1o5ZMt+P
+67wq5WDIbyI3ifQrbi/SAxpZeix2NdlkTjOlpmwzbmdK27H750UHZi1fLcHC++0z
+zlvKrpWOcPjeziuL68wny+PXyRdbc0f/XRh62pWIiodSpzKHI/TRk40tfcdSmla2
+z+YcOV08J2dYu8+0LV1W2KyPC03nJ5Jy9oOq/8KUf3W5a9pzac/ZQV9VRWWs5+ZE
+Z31R+vcvT3oS7R/mGw4OzcXHx0qZrERko9q6L7r3RMP/KHuk49w1hippbYl0T76U
+ysanCiczy5dLl9ZGm51v/ygtUv6pPLxafvyOPt+f6O14cNsznJHdVwfhYE7kWf+7
+gQPZoWmLfje+EV+fKTM7P5eMFMzgh4vN7ve5FfHo9TeN1Squ6uWed0ZfCD1CVptj
+xToaO1XwbRODghgg
+=hTEg
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/erbridge
+
+==================================================================
