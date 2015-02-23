@@ -37,7 +37,6 @@ defaults:
 
 gems:
   - jekyll-redirect-from
-  - octopress-autoprefixer
 
 kramdown:
   input: GFM

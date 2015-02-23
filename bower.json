@@ -1,0 +1,7 @@
+{
+  "name": "erbridge.github.io",
+  "private": true,
+  "dependencies": {
+    "prefixfree": "*"
+  }
+}
