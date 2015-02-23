@@ -3,6 +3,9 @@ title: "Welcome to the Island"
 categories:
   - gamedev
   - the-island
+hashtags:
+  - gamedev
+  - theisland
 ---
 We're making a game!
 
