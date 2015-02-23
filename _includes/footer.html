@@ -1,0 +1,24 @@
+<footer class="site-footer">
+
+  <div class="wrapper animated animated--fade-in animated--delay-1">
+
+    <ul class="contact-list">
+
+      {% for icon in site.contact-methods %}
+      <li class="icon icon--{{ icon.class }}">
+        <a href="{{ icon.url }}">
+          {% include icons/{{ icon.class }}.svg %}
+        </a>
+      </li>
+      {% endfor %}
+
+    </ul>
+
+    <p class="copyright">
+      © 2015 Felix Laurie von Massenbach<br>
+      <a href="/LICENSE.html">MIT</a> (code) / <a href="http://creativecommons.org/licenses/by/3.0/">CC-BY</a> (words &amp; pictures)
+    </p>
+
+  </div>
+
+</footer>

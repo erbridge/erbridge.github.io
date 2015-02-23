@@ -1,0 +1,229 @@
+/**
+ * Site header
+ */
+.site-header {
+  background-color: $lightest-background-colour;
+  min-height: 56px;
+
+  // Positioning context for the mobile navigation icon
+  position: relative;
+}
+
+.site-title {
+  font-family: $decorative-font-family;
+  font-weight: $decorative-font-weight;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+
+  &,
+  &:visited {
+    color: $site-title-colour;
+  }
+
+  &:hover {
+    color: $grey-0;
+  }
+}
+
+.site-nav {
+  float: right;
+  line-height: 56px;
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    font-family: $decorative-font-family;
+    font-weight: $decorative-font-weight;
+    font-size: 26px;
+    color: $page-link-colour;
+
+    &:hover {
+      color: $page-link-hover-colour;
+    }
+
+    // Gaps between nav items, but not on the first one
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+
+    &.page-link--active {
+
+      &,
+      &:hover {
+        color: $page-link-active-colour;
+      }
+    }
+  }
+
+  @include media-query($on-palm) {
+    position: absolute;
+    top: 9px;
+    right: 30px;
+    background-color: $base-background-colour;
+    border: 1px solid $light-background-colour;
+    border-radius: 5px;
+    text-align: right;
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+
+      > svg {
+        width: 18px;
+        height: 15px;
+
+        path {
+          fill: $page-link-colour;
+        }
+      }
+    }
+
+    .trigger {
+      clear: both;
+      display: none;
+    }
+
+    &:hover .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 5px 10px;
+      line-height: $base-line-height;
+    }
+  }
+}
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+  padding: $spacing-unit 0;
+}
+
+.contact-list {
+  min-height: 49px;  // FIXME: Hack!
+  list-style: none;
+  margin-left: 0;
+  text-align: center;
+
+  li {
+    display: inline;
+  }
+}
+
+.copyright {
+  font-size: $small-font-size;
+  line-height: $small-line-height;
+  text-align: center;
+  color: $grey-3;
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+  background-color: $light-background-colour;
+  padding: $spacing-unit 0;
+}
+
+.page-heading {
+  font-size: 20px;
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-6;
+}
+
+.post-link {
+  display: block;
+  font-size: 24px;
+}
+
+.tag {
+  color: $light-background-colour;
+  padding: 3px 10px;
+  border-radius: 5px;
+
+  &.tag--lang {
+    background-color: $red;
+  }
+
+  &.tag--framework {
+    background-color: $green;
+  }
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
+  color: $post-title-colour;
+
+  @include media-query($on-laptop) {
+    font-size: 36px;
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h2 {
+    font-size: 32px;
+
+    @include media-query($on-laptop) {
+      font-size: 28px;
+    }
+  }
+
+  h3 {
+    font-size: 26px;
+
+    @include media-query($on-laptop) {
+      font-size: 22px;
+    }
+  }
+
+  h4 {
+    font-size: 20px;
+
+    @include media-query($on-laptop) {
+      font-size: 18px;
+    }
+  }
+}

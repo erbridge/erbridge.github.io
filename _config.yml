@@ -1,0 +1,48 @@
+title:       erbridge
+email:       felix@erbridge.co.uk
+description: "Felix Laurie von Massenbach: game developer, programmer, roleplayer, MakieLab-er."
+
+baseurl: ""
+url:     http://erbridge.co.uk
+
+contact-methods:
+  - title: Twitter
+    url:   https://twitter.com/erbridge
+    class: twitter
+  - title: GitHub
+    url:   https://github.com/erbridge
+    class: github
+  - title: LinkedIn
+    url:   https://www.linkedin.com/in/erbridge
+    class: linkedin
+  - title: Email
+    url:   mailto:felix@erbridge.co.uk
+    class: email
+  - title: RSS
+    url:   /feed.xml
+    class: rss
+
+permalink: /blog/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: pages
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+gems:
+  - jekyll-redirect-from
+  - octopress-autoprefixer
+
+kramdown:
+  input: GFM
+
+exclude:
+  - "*.sublime-project"
+  - CNAME
+  - README.md
