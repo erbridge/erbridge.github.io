@@ -37,6 +37,7 @@ defaults:
 
 gems:
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 kramdown:
   input: GFM
