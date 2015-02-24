@@ -46,3 +46,4 @@ exclude:
   - "*.sublime-project"
   - CNAME
   - README.md
+  - bower.json
