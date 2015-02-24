@@ -3,6 +3,6 @@ title: About
 permalink: /
 redirect_from: /about/
 ---
-I'm a mathematical physicist turned programmer, currently making toys and games at [MakieLab](https://mymakie.com/) in London. I'm also working on a resource management sim called *The Island*. Sometimes I actually find time to play games too.
+I'm a mathematical physicist turned programmer, currently making toys and games at [MakieLab](https://mymakie.com/) in London. I'm also working on a resource management sim called [*The Island*](/blog/) as well as some [open source projects](https://github.com/erbridge) such as [*Lime Text*](https://github.com/limetext), a text editor for code.
 
-I also do a bit of tabletop gaming and roleplaying.
+Sometimes I find time to play games too.
