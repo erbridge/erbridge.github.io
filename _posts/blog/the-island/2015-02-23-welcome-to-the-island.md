@@ -1,5 +1,6 @@
 ---
 title: "Welcome to the Island"
+date: 2015-02-23 14:00
 categories:
   - gamedev
   - the-island
