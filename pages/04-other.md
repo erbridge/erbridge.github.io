@@ -8,7 +8,7 @@ permalink: /other/
 
 <span class="tag tag--framework">Qt</span>
 
-[GitHub](https://github.com/limetext)
+[GitHub](https://github.com/limetext){:target="_blank"}
 
 
 ## NQr
@@ -17,4 +17,4 @@ permalink: /other/
 
 <span class="tag tag--framework">wxPython</span>
 
-[GitHub](https://github.com/erbridge/NQr)
+[GitHub](https://github.com/erbridge/NQr){:target="_blank"}

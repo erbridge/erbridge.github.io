@@ -8,4 +8,4 @@ permalink: /web/
 
 <span class="tag tag--framework">Bootstrap</span> <span class="tag tag--framework">Django</span>
 
-[mymakie.com](https://mymakie.com/)
+[mymakie.com](https://mymakie.com/){:target="_blank"}
