@@ -20,18 +20,6 @@
   }
 }
 
-@keyframes fade-in-slide-in-right {
-  0% {
-    opacity: 0;
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
 
 
 .animated {
@@ -45,10 +33,6 @@
 
   &.animated--fade-in-slide-in-up {
     animation-name: fade-in-slide-in-up;
-  }
-
-  &.animated--fade-in-slide-in-right {
-    animation-name: fade-in-slide-in-right;
   }
 
   &.animated--delay-1 {
