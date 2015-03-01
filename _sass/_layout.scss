@@ -227,4 +227,13 @@
       font-size: 18px;
     }
   }
+
+  img {
+
+    &:not(.appstore) {
+      display: block;
+      margin: auto;
+      border: 1px solid $image-border-colour;
+    }
+  }
 }
