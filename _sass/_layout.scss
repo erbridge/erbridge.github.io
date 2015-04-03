@@ -3,7 +3,7 @@
  */
 .site-header {
   background-color: $lightest-background-colour;
-  min-height: 56px;
+  min-height: 60px;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -63,8 +63,8 @@
 
   @include media-query($on-palm) {
     position: absolute;
-    top: 9px;
-    right: 30px;
+    top: 11px;
+    right: 15px;
     background-color: $base-background-colour;
     border: 1px solid $light-background-colour;
     border-radius: 5px;
