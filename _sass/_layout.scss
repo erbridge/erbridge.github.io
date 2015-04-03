@@ -235,5 +235,11 @@
       margin: auto;
       border: 1px solid $image-border-colour;
     }
+
+    &.headshot {
+      float: right;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
   }
 }
