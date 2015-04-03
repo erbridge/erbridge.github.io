@@ -2,6 +2,15 @@
 title: Games
 permalink: /games/
 ---
+## beat-beat
+
+<span class="tag tag--lang">HTML5</span> <span class="tag tag--lang">JavaScript</span>
+
+<span class="tag tag--framework">Cordova</span> <span class="tag tag--framework">D3.js</span>
+
+[![App Store](/images/apple-appstore.svg){:class="appstore"}](https://itunes.apple.com/gb/app/beat-beat/id976093898){:target="_blank"}
+
+
 ## Makies Fashion
 
 <span class="tag tag--lang">C#</span> <span class="tag tag--lang">HTML5</span> <span class="tag tag--lang">JavaScript</span> <span class="tag tag--lang">Sass</span>
