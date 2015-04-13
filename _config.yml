@@ -34,11 +34,13 @@ defaults:
       type: posts
     values:
       layout: post
+      author: Felix Laurie von Massenbach
   - scope:
       path: ""
       type: drafts
     values:
       layout: post
+      author: Felix Laurie von Massenbach
 
 gems:
   - jekyll-redirect-from
