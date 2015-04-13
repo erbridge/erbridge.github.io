@@ -2,6 +2,7 @@
 title: "Welcome to the Island"
 date: 2015-02-23 14:00
 categories:
+  - blog
   - gamedev
   - the-island
 hashtags:

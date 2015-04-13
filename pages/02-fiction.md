@@ -1,11 +1,9 @@
 ---
-title: Blog
-permalink: /blog/
+title: Fiction
+permalink: /fiction/
 ---
 {% for post in site.posts %}
-{% if post.categories contains "blog" %}
-
-{{ post.date | date: "%-d %B %Y" }}
+{% if post.categories contains "fiction" %}
 
 # [{{ post.title }}]({{ post.url | prepend: site.baseurl }}){% if post.subtitle %} - {{ post.subtitle }}{% endif %}
 

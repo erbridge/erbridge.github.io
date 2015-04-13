@@ -10,8 +10,11 @@ layout: default
 
   <article class="post-content">
     {{ content }}
+    {% if page.summary %}
+      <em>{{ page.summary | markdownify }}</em>
+    {% endif %}
   </article>
 
-  <p><em><a href="http://twitter.com/share?text={{ page.title | cgi_escape }}&via=erbridge&hashtags={{ page.hashtags | join:',' }}" target="_blank">Tweet about this...</a></em></p>
+  <p><em><a href="http://twitter.com/share?text={{ page.title | cgi_escape }}&via=erbridge&hashtags={{ page.hashtags | join:',' }}" target="_blank">Tweet about this post...</a></em></p>
 
 </div>

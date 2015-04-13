@@ -2,6 +2,7 @@
 title: "The Island - Dev Log #1: Setting Sail"
 date: 2015-04-03 16:22
 categories:
+  - blog
   - gamedev
   - the-island
 hashtags:
