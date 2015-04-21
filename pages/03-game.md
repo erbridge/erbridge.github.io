@@ -2,6 +2,15 @@
 title: Games
 permalink: /games/
 ---
+## Fatal Attraction
+
+<span class="tag tag--lang">HTML5</span> <span class="tag tag--lang">JavaScript</span>
+<span class="tag tag--framework">Phaser</span>
+
+[Web](/fatal-attraction/){:target="_blank"}
+[GitHub](https://github.com/erbridge/fatal-attraction){:target="_blank"}
+
+
 ## beat-beat
 
 <span class="tag tag--lang">HTML5</span> <span class="tag tag--lang">JavaScript</span>
