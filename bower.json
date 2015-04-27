@@ -2,6 +2,7 @@
   "name": "erbridge.github.io",
   "private": true,
   "dependencies": {
-    "prefixfree": "*"
+    "prefixfree": "*",
+    "smoothstate": "~0.5.2"
   }
 }
