@@ -4,12 +4,13 @@
 
 var $body = $('body');
 
-$('#main').smoothState({
+var content = $('#main').smoothState({
   prefetch: true,
   pageCacheSize: 5,
   onStart: {
-    duration: 100,
+    duration: 250,
     render: function () {
+      content.toggleAnimationClass('animation-scene--is-exiting');
       $body.animate({
         scrollTop: 0,
         scrollLeft: 0,
@@ -21,6 +22,6 @@ $('#main').smoothState({
       window.ga('send', 'pageview', window.location.pathname || url);
     }
   },
-});
+}).data('smoothState');
 
 })(jQuery);
