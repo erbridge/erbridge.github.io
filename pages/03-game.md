@@ -8,6 +8,7 @@ permalink: /games/
 <span class="tag tag--framework">Phaser</span>
 
 [Web](/fatal-attraction/){:target="_blank"}
+[Ludum Dare](http://ludumdare.com/compo/ludum-dare-32/?action=preview&uid=34508){:target="_blank"}
 [GitHub](https://github.com/erbridge/fatal-attraction){:target="_blank"}
 
 
