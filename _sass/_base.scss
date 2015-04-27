@@ -21,6 +21,7 @@ body {
   color: $text-colour;
   background-color: $base-background-colour;
   -webkit-text-size-adjust: 100%;
+  overflow-y: scroll;
 }
 
 
