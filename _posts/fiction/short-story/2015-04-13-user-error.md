@@ -4,6 +4,8 @@ hide-date: true
 categories:
   - fiction
   - short-story
+description: >
+  USER ERROR: a short story written for the [Sci-Fi-London 48 Hour Flash Fiction 2015](http://48hour.sci-fi-london.com/challenge/sfl-48-hour-flash-fiction-2015){:target="_blank"} completion.
 summary: >
   This short story was written for the [Sci-Fi-London 48 Hour Flash Fiction 2015](http://48hour.sci-fi-london.com/challenge/sfl-48-hour-flash-fiction-2015){:target="_blank"} completion. Participants were given a title and line of dialogue and told to write less than 1500 words using those elements in 48 hours. My title was USER ERROR and the line of dialogue was "I don't see why I should be punished, we were all there, we all saw it".
 permalink: /fiction/user-error/

@@ -8,6 +8,8 @@ categories:
 hashtags:
   - gamedev
   - theisland
+description: >
+  The Island: choosing an engine.
 ---
 We've already decided we're going to make *The Island* in 3d, so picking an engine is an obvious starting point. As a Linux user (and reluctant Windows dual booter), I need an engine that I can develop on Linux with. I've used Unity on OS X in the past, and its richly featured editor has spoiled my expectations of what an engine should deliver. That coupled with the need for 3d support doesn't leave many choices. While lots of engines support Linux as a build target, very few have any kind of visual IDE or editor that will run on the platform.
 

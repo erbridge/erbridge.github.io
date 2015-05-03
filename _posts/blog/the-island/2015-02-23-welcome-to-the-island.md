@@ -8,6 +8,8 @@ categories:
 hashtags:
   - gamedev
   - theisland
+description: >
+  The Island: we're making a game!
 ---
 We're making a game!
 
