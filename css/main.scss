@@ -76,6 +76,11 @@ $on-laptop: 800px;
     }
 }
 
+@mixin colour-with-glow($colour) {
+  color: $colour;
+  text-shadow: 0 0 5px rgba($colour, 0.5);
+}
+
 
 
 @import

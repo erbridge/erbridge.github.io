@@ -84,7 +84,8 @@ li {
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font-family;
   font-weight: $heading-font-weight;
-  color: $heading-colour;
+
+  @include colour-with-glow($heading-colour);
 }
 
 
@@ -97,11 +98,11 @@ a {
 
   &,
   &:visited {
-    color: $link-colour;
+    @include colour-with-glow($link-colour);
   }
 
   &:hover {
-    color: $link-hover-colour;
+    @include colour-with-glow($link-hover-colour);
   }
 }
 
