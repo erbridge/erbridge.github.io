@@ -15,7 +15,7 @@
 
       <div class="trigger">
         {% for other_page in site.pages | sort: "name" %}
-          {% if other_page.title %}
+          {% if other_page.title and other_page.categories contains "toplevel" %}
             {% if other_page.name != page.name %}
               <a class="page-link" href="{{ other_page.url | prepend: site.baseurl }}">{{ other_page.title }}</a>
             {% else %}

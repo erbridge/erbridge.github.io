@@ -1,5 +1,7 @@
 ---
 title: Other
+categories:
+  - toplevel
 permalink: /other/
 ---
 ## Lime Text

@@ -1,5 +1,7 @@
 ---
 title: Fiction
+categories:
+  - toplevel
 permalink: /fiction/
 ---
 {% for post in site.posts %}

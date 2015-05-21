@@ -1,5 +1,7 @@
 ---
 title: About
+categories:
+  - toplevel
 permalink: /
 redirect_from: /about/
 ---

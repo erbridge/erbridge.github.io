@@ -1,5 +1,7 @@
 ---
 title: Blog
+categories:
+  - toplevel
 permalink: /blog/
 ---
 {% for post in site.posts %}

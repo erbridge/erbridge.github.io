@@ -1,5 +1,7 @@
 ---
 title: Web
+categories:
+  - toplevel
 permalink: /web/
 ---
 ## Makies

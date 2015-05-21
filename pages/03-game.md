@@ -1,5 +1,7 @@
 ---
 title: Games
+categories:
+  - toplevel
 permalink: /games/
 ---
 ## Fatal Attraction
