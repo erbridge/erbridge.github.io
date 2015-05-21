@@ -207,6 +207,10 @@
       flex-grow: 1;
     }
 
+    &:hover {
+      box-shadow: 0 0 10px 2px $image-border-colour;
+    }
+
     img {
       height: 100%;
     }
