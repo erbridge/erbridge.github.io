@@ -187,6 +187,32 @@
   }
 }
 
+.project-list {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+
+  .project-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+    height: 220px;
+    margin: 5px;
+    background-color: $grey-0;
+    border: 1px solid $image-border-colour;
+
+    &.project-list-item--no-image {
+      flex-grow: 1;
+    }
+
+    img {
+      height: 100%;
+    }
+  }
+}
+
 
 
 /**
@@ -237,7 +263,7 @@
 
   img {
 
-    &:not(.appstore) {
+    &:not(.no-border) {
       display: block;
       margin: auto;
       border: 1px solid $image-border-colour;
