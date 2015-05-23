@@ -162,6 +162,7 @@
 }
 
 .post-meta {
+  text-align: center;
   font-size: $small-font-size;
   color: $grey-3;
 }
@@ -191,7 +192,7 @@
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap-reverse;
-  justify-content: flex-end;
+  justify-content: center;
 
   .project-list-item {
     display: flex;
