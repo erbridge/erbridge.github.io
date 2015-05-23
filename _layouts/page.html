@@ -13,6 +13,36 @@ layout: default
       <p><img src="{{ page.imageurl }}"></p>
     {% endif %}
 
+    {% if page.appleappstoreurl or page.googleplayurl or page.amazonappsstoreurl or page.otherexternalurls %}
+      <p class="store-list">
+
+        {% if page.appleappstoreurl %}
+          <a href="{{ page.appleappstoreurl }}" target="_blank">
+            <img src="/images/apple-appstore.svg" alt="App Store" class="no-border">
+          </a>
+        {% endif %}
+
+        {% if page.googleplayurl %}
+          <a href="{{ page.googleplayurl }}" target="_blank">
+            <img src="/images/google-play.png" alt="Google Play" class="no-border">
+          </a>
+        {% endif %}
+
+        {% if page.amazonappsstoreurl %}
+          <a href="{{ page.amazonappsstoreurl }}" target="_blank">
+            <img src="/images/amazon-apps-store.png" alt="Amazon Apps Store" class="no-border">
+          </a>
+        {% endif %}
+
+        {% for exturl in page.otherexternalurls %}
+          <a href="{{ exturl[1] }}" target="_blank">
+            <span class="store-button">{{ exturl[0] }}</span>
+          </a>
+        {% endfor %}
+
+      </p>
+    {% endif %}
+
     {% if page.langtags or page.frameworktags %}
       <p class="tag-list">
 

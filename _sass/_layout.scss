@@ -172,6 +172,28 @@
   font-size: 24px;
 }
 
+.store-list {
+  text-align: center;
+
+  img:hover {
+    box-shadow: 0 0 10px 2px $image-border-colour;
+  }
+
+  .store-button {
+    position: relative;
+    background-color: $base-background-colour;
+    line-height: 1.8;
+    padding: 5px 10px;
+    border: 1px solid $image-border-colour;
+    border-radius: 5px;
+    user-select: none;
+
+    &:hover {
+      box-shadow: 0 0 10px 2px $image-border-colour;
+    }
+  }
+}
+
 .tag-list {
   text-align: center;
 
@@ -204,11 +226,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 220px;
-    height: 220px;
+    height: 250px;
     margin: 5px;
     background-color: $grey-0;
     border: 1px solid $image-border-colour;
+    border-radius: 5px;
+    overflow: hidden;
 
     &.project-list-item--no-image {
       flex-grow: 1;
@@ -278,6 +301,7 @@
       display: block;
       margin: auto;
       border: 1px solid $image-border-colour;
+      border-radius: 5px;
     }
 
     &.headshot {
