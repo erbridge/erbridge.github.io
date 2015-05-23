@@ -8,7 +8,37 @@ layout: default
   </header>
 
   <article class="post-content">
+
+    {% if page.imageurl %}
+      <p><img src="{{ page.imageurl }}"></p>
+    {% endif %}
+
+    {% if page.langtags or page.frameworktags %}
+      <p class="tag-list">
+
+        {% if page.langtags %}
+
+          {% for tag in page.langtags %}
+            <span class="tag tag--lang">{{ tag }}</span>
+          {% endfor %}
+
+          {% if page.frameworktags %}
+            <br>
+          {% endif %}
+
+        {% endif %}
+
+        {% if page.frameworktags %}
+          {% for tag in page.frameworktags %}
+            <span class="tag tag--framework">{{ tag }}</span>
+          {% endfor %}
+        {% endif %}
+
+      </p>
+    {% endif %}
+
     {{ content }}
+
   </article>
 
 </div>

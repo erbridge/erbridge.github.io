@@ -172,20 +172,24 @@
   font-size: 24px;
 }
 
-.tag {
-  line-height: 1.8;
-  padding: 3px 10px;
-  border-style: solid;
-  border-width: 0 1px;
-  border-radius: 5px;
-  user-select: none;
+.tag-list {
+  text-align: center;
 
-  &.tag--lang {
-    border-color: $red;
-  }
+  .tag {
+    line-height: 1.8;
+    padding: 3px 10px;
+    border-style: solid;
+    border-width: 0 1px;
+    border-radius: 5px;
+    user-select: none;
 
-  &.tag--framework {
-    border-color: $green;
+    &.tag--lang {
+      border-color: $red;
+    }
+
+    &.tag--framework {
+      border-color: $green;
+    }
   }
 }
 
