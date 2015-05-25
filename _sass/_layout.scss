@@ -49,6 +49,10 @@
 
     &:hover {
       @include colour-with-glow($page-link-hover-colour);
+
+      @include media-query($on-palm) {
+        @include colour-with-glow($grey-2);
+      }
     }
 
     // Gaps between nav items, but not on the first one
