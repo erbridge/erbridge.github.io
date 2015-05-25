@@ -10,7 +10,7 @@ layout: default
   <article class="post-content">
 
     {% if page.imageurl %}
-      <p><img src="{{ page.imageurl }}"></p>
+      <p><img src="{{ page.imageurl }}" alt="{{ page.title }}"></p>
     {% endif %}
 
     {% if page.appleappstoreurl or page.googleplayurl or page.amazonappsstoreurl or page.otherexternalurls %}

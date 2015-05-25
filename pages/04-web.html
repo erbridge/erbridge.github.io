@@ -9,7 +9,7 @@ permalink: /web/
     {% if other_page.categories contains "web" %}
       <a class="project-list-item{% if other_page.imageurl %}{% else %} project-list-item--no-image{% endif %}" href="{{ other_page.url | prepend: site.baseurl }}">
         {% if other_page.imageurl %}
-          <img class="no-border" src="{{ other_page.imageurl }}">
+          <img class="no-border" src="{{ other_page.imageurl }}" alt="{{ other_page.title }}">
         {% else %}
           {{ other_page.title }}
         {% endif %}
