@@ -1,44 +1,32 @@
 jquery.smoothState.js
 ===============
-[Checkout the demo site](http://weblinc.github.io/jquery.smoothState.js/index.html) for examples and tutorials. [Let me know](https://twitter.com/tayokoart) if you have any questions.
+[![Build Status](https://travis-ci.org/miguel-perez/smoothState.js.svg?branch=master)](https://travis-ci.org/miguel-perez/smoothState.js)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/miguel-perez/smoothState.js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 * [About](#about)
 * [Options](#options)
-	* [prefetch](#prefetch)
-	* [blacklist](#blacklist)
-	* [development](#development)
-	* [pageCacheSize](#pagecachesize)
-	* [alterRequestUrl](#alterrequesturl)
 * [Callbacks](#callbacks)
-	* [onStart](#onstart)
-	* [onProgress](#onprogress)
-	* [onEnd](#onend)
-	* [callback](#callback)
 * [Methods and properties](#methods-and-properties)
-	* [href](#href)
-	* [cache](#cache)
-	* [load](#loadurl)
-	* [fetch](#fetchurl)
-	* [toggleAnimationClass](#toggleanimationclassclassname)
-* [Show your work!](#show-your-work)
+* [Contribute](#contribute)
 * [Need help?](#need-help)
-
 
 ## About
 
-Hard cuts and white flashes break user focus and create confusion as layouts change or elements rearrange. **We’ve accepted the jankiness of page loads as a personality quirk of the web**, even though there is no technical reason it must exist. We don't need to treat the web like a native app's ugly cousin.
+smoothState.js is a jQuery plugin that progressively enhances page loads to give you control over page transitions.
 
-Javascript [SPA frameworks](http://en.wikipedia.org/wiki/Single-page_application), sometimes referred to as MVC frameworks, are a common way to solve this issue. However, these frameworks often **lose the benefits of unobtrusive code**, such as resilience to errors, performance, and accessibility. smoothState.js lets you start adding transitions that eliminate the hard cuts of page loads to improve the beauty of the experience. It does this with:
-
-* **Progressive enhancement** - a technique that exemplifies the principles universal design
-* **jQuery** - a library a great many of us are familiar with
-* **history.pushState()** - a method that lets us maintain browsing expectations
-* **Ajax** - a way for us to  request and store pages on the user's device without refreshing the page
-
-smoothState.js will [unobtrusively enhance](http://en.wikipedia.org/wiki/Unobtrusive_JavaScript) your website's page loads to behave more like a single-page application framework. This allows you to add page transitions and create a nicer experince for your users.
+* [Checkout the demo site]( http://miguel-perez.github.io/smoothState.js) for examples and tutorials.
+* Learn [How To Add Page Transitions with CSS and smoothState.js](https://css-tricks.com/add-page-transitions-css-smoothstate-js/) on CSSTricks
+* Post sites you've created with smoothState on [/r/smoothState](http://www.reddit.com/r/smoothstate/)
 
 ## Options
+
 smoothState provides some options that allow you to customize the functionality of the plugin.
+
+* [prefetch](#prefetch)
+* [blacklist](#blacklist)
+* [development](#development)
+* [pageCacheSize](#pagecachesize)
+* [alterRequestUrl](#alterrequesturl)
 
 ### `prefetch`
 There is a 200ms to 300ms delay between the time that a user hovers over a link and the time they click it. On touch screens, the delay between the touchstart and touchend is even greater. If the prefetch option is set to true, smoothState will begin to preload the contents of the url between that delay.
@@ -49,20 +37,27 @@ This technique will dramatically increase the speed of your website.
 A string that is used as a jQuery selector to ignore certain links. By default smoothState will ignore any links that match `".no-smoothstate, [target]"`.
 
 ### `development`
-A boolean, default being `false`, that will tell smoothState to output useful debug info when something goes wrong in console instead of trying to abort and reload the page. 
+A boolean, default being `false`, that will tell smoothState to output useful debug info when something goes wrong in console instead of trying to abort.
 
 ### `pageCacheSize`
 smoothState.js will store pages in memory if pageCacheSize is set to anything greater than 0. This allows a user to avoid having to request pages more than once. Pages that are stored in memory will load instantaneously.
 
 ### `alterRequestUrl`
-A function that defines any alterations needed on the URL that is used to request content from the server. The function should return a string that is a valid URL. This is useful when dealing with applications that have layout controls or when needing to inavlidate the cache.
+A function that defines any alterations needed on the URL that is used to request content from the server. The function should return a string that is a valid URL. This is useful when dealing with applications that have layout controls or when needing to invalidate the cache.
 
 ## Callbacks
+
+Callbacks allow you to choreograph how elements enter and exit your page.
+
+* [onStart](#onstart)
+* [onProgress](#onprogress)
+* [onEnd](#onend)
+* [callback](#callback)
 
 ### `onStart`
 Ran when a link has been activated, a "click". Default:
 
-```Javanscript
+```js
 onStart : {
     duration: 0, // Duration of the animations, if any.
     render: function (url, $container) {
@@ -73,7 +68,7 @@ onStart : {
 
 ### `onProgress`
 Ran if the page request is still pending and onStart has finished animating.Default:
-```Javanscript
+```js
 onProgress : {
     duration: 0, // Duration of the animations, if any.
     render: function (url, $container) {
@@ -85,7 +80,7 @@ onProgress : {
 
 ### `onEnd`
 Ran when requested content is ready to be injected into the page
-```Javanscript
+```js
 onEnd : {
     duration: 0, // Duration of the animations, if any.
     render: function (url, $container, $content) {
@@ -98,16 +93,24 @@ onEnd : {
 
 ### `callback`
 Ran after the new content has been injected into the page
-```Javanscript
+```js
 callback : function(url, $container, $content) {
 
 }
 ```
 
 ## Methods and properties
+
 smoothState provides some methods available by accessing the element's data property.
 
-```javascript
+* [href](#href)
+* [cache](#cache)
+* [load](#loadurl)
+* [fetch](#fetchurl)
+* [toggleAnimationClass](#toggleanimationclassclassname)
+* [restartCSSAnimations](#restartcssanimations)
+
+```js
 var content  = $('#main').smoothState().data('smoothState');
 content.load('/newPage.html');
 
@@ -123,15 +126,56 @@ Variable that stores pages after they are requested.
 Loads the contents of a url into our container.
 
 ### `fetch(url)`
-Fetches the contents of a url and stores it in the 'cache' varible.
+Fetches the contents of a url and stores it in the 'cache' variable.
 
 ### `toggleAnimationClass(classname)`
-Used to restart css animations with a class.
+This method is **deprecated** and will be removed in version 0.6.0. It was used to restart css animations while toggling a specific class, such as `.is-existing`. This proved to be an unreliable way to handle restarting css animtions since there's no way to define when we want the class to be removed. Use `restartCSSAnimations()` instead, and add or remove the animation classes on the appropiate callbacks.
 
+### `restartCSSAnimations()`
+Restarts the CSS animations of the smoothState container.
 
-## Show your work!
-I'd love to see how this gets used in the wild. [Tweet me](https://twitter.com/tayokoart) with a link and I'll add it to this page. This repo could use some good demos.
+```js
+var smoothState = $page.smoothState({
+    onStart: {
+      duration: 250,
+      render: function (url, $container) {
+        // Add your CSS animation reversing class
+        $page.addClass('is-exiting');
 
+        // Restart your animation
+        smoothState.restartCSSAnimations();
+
+        // anything else
+      }
+    },
+    onEnd: {
+      duration: 0,
+      render: function (url, $container, $content) {
+        // Remove your CSS animation reversing class
+        $page.removeClass('is-exiting');
+
+        // Inject the new content
+        $container.html($content);
+      }
+    }
+  }).data('smoothState');
+```
 
 ## Need help?
-If you find yourself confused, add an issue explaining your problem. Doing so will help me improve the clarity of the documentation and get us thinking about use cases and potential upgrades. I'm all ears.
+
+If you need a little help implementing smoothState there are a couple things you could do to get some support:
+
+1. Post on stackoverflow using the [smoothstate.js tag](http://stackoverflow.com/tags/smoothstate.js).
+2. Join the [Gitter room](https://gitter.im/miguel-perez/smoothState.js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) and talk to some of the contributors.
+3. Contact [Miguel](http://miguel-perez.com/), he provides training and consultation services.
+
+Please **avoid creating a github issue with personal support requests**, we'll want to keep the tracker clear for bugs and pull requests.
+
+## Contribute
+
+We're always looking for:
+
+* Bug reports, especially those with a reduced test case
+* Pull requests, features, spelling errors, clarifications, etc
+* Ideas for enhacements
+* Demos of sites built with smoothState

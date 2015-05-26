@@ -3,6 +3,6 @@
   "private": true,
   "dependencies": {
     "prefixfree": "*",
-    "smoothstate": "~0.5.2"
+    "smoothstate": "427823275acc9fd6aeb49e7ec53107daf363ba8e"
   }
 }
