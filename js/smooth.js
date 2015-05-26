@@ -21,7 +21,7 @@ var smoothState = $mainContent.smoothState({
       spinnerTimeout = setTimeout(function() {
         $spinner.addClass('animation-scene--is-exiting');
         $spinner.show();
-      }, 300);
+      }, 500);
 
       smoothState.restartCSSAnimations();
 
