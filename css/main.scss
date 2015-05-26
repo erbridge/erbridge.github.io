@@ -1,6 +1,6 @@
 ---
 ---
-@charset "utf-8";
+@charset 'utf-8';
 
 
 
@@ -59,6 +59,8 @@ $page-link-active-colour:    $yellow;
 $post-title-colour:          $orange;
 $site-title-colour:          $green;
 
+$spinkit-spinner-color: $red;
+
 $on-palm:   600px;
 $on-laptop: 800px;
 
@@ -84,8 +86,9 @@ $on-laptop: 800px;
 
 
 @import
-        "base",
-        "layout",
-        "animation",
-        "syntax-highlighting"
+        'base',
+        'layout',
+        '../js/bower_components/spinkit/scss/spinners/3-wave',
+        'animation',
+        'syntax-highlighting'
 ;

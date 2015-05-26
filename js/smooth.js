@@ -4,6 +4,8 @@
 
 var $body = $('body');
 var $mainContent = $('#main');
+var $spinner = $('#spinner');
+var spinnerTimeout;
 
 var smoothState = $mainContent.smoothState({
   prefetch: true,
@@ -16,6 +18,11 @@ var smoothState = $mainContent.smoothState({
 
       $mainContent.addClass('animation-scene--is-exiting');
 
+      spinnerTimeout = setTimeout(function() {
+        $spinner.addClass('animation-scene--is-exiting');
+        $spinner.show();
+      }, 300);
+
       smoothState.restartCSSAnimations();
 
       $body.animate({
@@ -27,6 +34,10 @@ var smoothState = $mainContent.smoothState({
   onEnd: {
     duration: 100,
     render: function(url, $container, $content) {
+      clearTimeout(spinnerTimeout);
+      $spinner.hide();
+      $spinner.removeClass('animation-scene--is-exiting');
+
       $mainContent.removeClass('animation-scene--is-exiting');
 
       $container.html($content);
@@ -41,5 +52,8 @@ var smoothState = $mainContent.smoothState({
     }
   },
 }).data('smoothState');
+
+$('a').click(function() {
+});
 
 })(jQuery);

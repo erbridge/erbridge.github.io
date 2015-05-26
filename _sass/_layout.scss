@@ -315,3 +315,20 @@
     }
   }
 }
+
+
+
+/**
+ * Spinner
+ */
+.spinner-outer {
+  display: none;
+  position: fixed;
+  top: 15%;
+  width: 100%;
+
+  .spinner-inner {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
