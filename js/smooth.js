@@ -18,6 +18,7 @@ var smoothState = $mainContent.smoothState({
 
       $mainContent.addClass('animation-scene--is-exiting');
 
+      clearTimeout(spinnerTimeout);
       spinnerTimeout = setTimeout(function() {
         $spinner.addClass('animation-scene--is-exiting');
         $spinner.show();
@@ -35,8 +36,10 @@ var smoothState = $mainContent.smoothState({
     duration: 100,
     render: function(url, $container, $content) {
       clearTimeout(spinnerTimeout);
-      $spinner.hide();
       $spinner.removeClass('animation-scene--is-exiting');
+      spinnerTimeout = setTimeout(function() {
+        $spinner.hide();
+      }, 100);
 
       $mainContent.removeClass('animation-scene--is-exiting');
 

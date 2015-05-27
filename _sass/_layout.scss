@@ -328,7 +328,7 @@
   width: 100%;
 
   .spinner-inner {
-    width: 50%;
+    width: 50px;  // Match the spinner width.
     margin: 0 auto;
   }
 }
