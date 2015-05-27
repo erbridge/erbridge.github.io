@@ -56,7 +56,4 @@ var smoothState = $mainContent.smoothState({
   },
 }).data('smoothState');
 
-$('a').click(function() {
-});
-
 })(jQuery);
