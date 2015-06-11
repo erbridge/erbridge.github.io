@@ -1,8 +1,8 @@
 {
   "name": "smoothstate",
-  "main": "dist/jquery.smoothState.js",
-  "version": "0.5.43",
-  "description": "A jQuery plugin to stop the jank of page loads.",
+  "main": "./src/jquery.smoothState.js",
+  "version": "0.7.2",
+  "description": "Unobtrusive page transitions with jQuery.",
   "keywords": [
     "pjax",
     "animation",
@@ -37,14 +37,14 @@
     "test",
     "tests"
   ],
-  "_release": "0.5.43",
+  "_release": "0.7.2",
   "_resolution": {
     "type": "version",
-    "tag": "0.5.43",
-    "commit": "aae3d91769b433265d742216732101b42d0ac6c5"
+    "tag": "0.7.2",
+    "commit": "3abbd8ffa72bdc4e3d45614243b52e1d1bfd8883"
   },
-  "_source": "git://github.com/miguel-perez/jquery.smoothState.js.git",
-  "_target": "~0.5.43",
+  "_source": "git://github.com/miguel-perez/smoothState.js.git",
+  "_target": "~0.7.2",
   "_originalSource": "smoothstate",
   "_direct": true
 }

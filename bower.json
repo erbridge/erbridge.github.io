@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "prefixfree": "*",
-    "smoothstate": "~0.5.43",
+    "smoothstate": "~0.7.2",
     "spinkit": "~1.0.1"
   }
 }

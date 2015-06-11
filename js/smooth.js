@@ -1,28 +1,23 @@
+/* global jQuery */
+
 (function($) {
 
 'use strict';
 
 var $body = $('body');
-var $mainContent = $('#main');
 var $spinner = $('#spinner');
 var spinnerTimeout;
 
-var smoothState = $mainContent.smoothState({
+var smoothState = $('#main').smoothState({
   prefetch: true,
-  pageCacheSize: 5,
+  cacheLength: 5,
   onStart: {
     duration: 250,
-    render: function() {
+    render: function($container) {
       $body.css('cursor', 'wait');
       $body.find('a').css('cursor', 'wait');
 
-      $mainContent.addClass('animation-scene--is-exiting');
-
-      clearTimeout(spinnerTimeout);
-      spinnerTimeout = setTimeout(function() {
-        $spinner.addClass('animation-scene--is-exiting');
-        $spinner.show();
-      }, 500);
+      $container.addClass('animation-scene--is-exiting');
 
       smoothState.restartCSSAnimations();
 
@@ -32,26 +27,35 @@ var smoothState = $mainContent.smoothState({
       }, 100);
     },
   },
-  onEnd: {
-    duration: 100,
-    render: function(url, $container, $content) {
+  onProgress: {
+    duration: 0,
+    render: function() {
+      clearTimeout(spinnerTimeout);
+      spinnerTimeout = setTimeout(function() {
+        $spinner.addClass('animation-scene--is-exiting');
+        $spinner.show();
+      }, 250);
+    },
+  },
+  onReady: {
+    duration: 250,
+    render: function($container, $content) {
       clearTimeout(spinnerTimeout);
       $spinner.removeClass('animation-scene--is-exiting');
       spinnerTimeout = setTimeout(function() {
         $spinner.hide();
       }, 100);
 
-      $mainContent.removeClass('animation-scene--is-exiting');
-
+      $container.removeClass('animation-scene--is-exiting');
       $container.html($content);
-
-      $body.css('cursor', 'auto');
-      $body.find('a').css('cursor', 'auto');
     },
   },
-  callback: function(url) {
+  onAfter: function() {
+    $body.css('cursor', 'auto');
+    $body.find('a').css('cursor', 'auto');
+
     if (window.ga) {
-      window.ga('send', 'pageview', window.location.pathname || url);
+      window.ga('send', 'pageview', window.location.pathname || smoothState.href);
     }
   },
 }).data('smoothState');
