@@ -43,14 +43,16 @@
 }
 
 
+.animated {
+  animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
 
 .animation-scene,
-.animation-scene--is-reversed.animation-scene--is-exiting, {
+.animation-scene--is-reversed.animation-scene--is-entering, {
 
   .animated {
-    animation-duration: 0.25s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: both;
 
     &.animated--fade-in {
       animation-name: fade-in;
@@ -70,7 +72,6 @@
 .animation-scene--is-reversed {
 
   .animated {
-    animation-delay: 0s;
 
     &.animated--fade-in {
       animation-name: fade-out;
