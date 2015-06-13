@@ -12,7 +12,7 @@ var smoothState = $('#main').smoothState({
   prefetch: true,
   cacheLength: 5,
   onStart: {
-    duration: 250,
+    duration: 500,
     render: function($container) {
       $body.css('cursor', 'wait');
       $body.find('a').css('cursor', 'wait');
