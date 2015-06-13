@@ -69,6 +69,10 @@
   animation-duration: 0.25s;
   transition-timing-function: ease-in;
   animation-fill-mode: both;
+
+  .hold-animation & {
+    animation-delay: 0.5s;
+  }
 }
 
 .animated--slow-fade-in-background-colour {

@@ -70,4 +70,10 @@ var smoothState = $('#main').smoothState({
   },
 }).data('smoothState');
 
+$(document).ready(function() {
+  setTimeout(function() {
+    $('body').removeClass('hold-animation');
+  }, 750);
+});
+
 })(jQuery);
