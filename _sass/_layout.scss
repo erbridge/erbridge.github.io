@@ -240,6 +240,10 @@
     border-radius: 5px;
     overflow: hidden;
 
+    @include media-query($on-palm) {
+      height: 220px;
+    }
+
     &.project-list-item--no-image {
       flex-grow: 1;
     }
@@ -250,6 +254,7 @@
 
     img {
       height: 100%;
+      max-width: none;
     }
   }
 }
