@@ -52,5 +52,5 @@ baleful worm, whose feelers laced a threadless shell.
 It is unknown: it might be terrible: but chirurgeons and storytellers
 Deliver on more presciently informative mysteries:
 That all monsters are birthed flesh and entrails: commiserate that!
-And that a worrisome hellfire priest known Judas
+And that a worrisome hellfire priest née Judas
 Is the guardian of the unification. Commiserate that!
