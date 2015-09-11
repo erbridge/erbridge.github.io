@@ -11,6 +11,6 @@ I'm a mathematical physicist turned programmer, currently freelancing, making ga
 
 Thinking about hiring me? Send me a [tweet](https://twitter.com/erbridge), or [email me](mailto:felix@erbridge.co.uk). I'm comfortable anywhere in the stack.
 
-Previous clients:
+Previous clients include:
 
 - [KNYTTAN](https://knyttan.com/)
