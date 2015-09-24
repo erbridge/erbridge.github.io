@@ -43,6 +43,7 @@ defaults:
       author: Felix Laurie von Massenbach
 
 gems:
+  - jekyll-feed
   - jekyll-redirect-from
   - jekyll-sitemap
 

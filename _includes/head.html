@@ -27,6 +27,8 @@
   <meta name="og:locale" content="en_GB">
   <meta name="og:locale:alternate" content="en_US">
 
+  {% feed_meta %}
+
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <meta name="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
