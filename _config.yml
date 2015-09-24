@@ -2,6 +2,11 @@ title:       erbridge
 email:       felix@erbridge.co.uk
 description: "Felix Laurie von Massenbach: freelance game / web developer, programmer, fixer, roleplayer, ex-MakieLab-er."
 
+name: erbridge
+author:
+  name: Felix Laurie von Massenbach
+  email: felix@erbridge.co.uk
+
 baseurl: ""
 url:     http://erbridge.co.uk
 
