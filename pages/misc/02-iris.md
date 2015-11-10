@@ -1,5 +1,5 @@
 ---
-title: "Gladys"
+title: "Iris"
 categories:
   - misc
 langtags:
@@ -9,6 +9,6 @@ frameworktags:
   - jQuery
   - jQuery UI
 otherexternalurls:
-  GitHub: https://github.com/erbridge/gladys
-permalink: /misc/gladys/
+  GitHub: https://github.com/erbridge/iris
+permalink: /misc/iris/
 ---
