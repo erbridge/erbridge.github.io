@@ -13,4 +13,4 @@ Thinking about hiring me? Send me a [tweet](https://twitter.com/erbridge), or [e
 
 Previous clients include:
 
-- [KNYTTAN](https://knyttan.com/)
+- [UNMADE / KNYTTAN](http://unmade.com/)
