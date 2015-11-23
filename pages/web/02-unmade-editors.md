@@ -8,7 +8,7 @@ langtags:
 frameworktags:
   - Knockout
 otherexternalurls:
-  Website: http://unmade.com/
+  Website: https://unmade.com/
 imageurl: /images/web/unmade-ribbon.png
 permalink: /web/unmade-editors/
 ---
