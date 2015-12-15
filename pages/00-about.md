@@ -11,8 +11,9 @@ My name is Felix Laurie von Massenbach. I'm a mathematical physicist turned prog
 
 Thinking about hiring me? Send me a [tweet](https://twitter.com/erbridge), or [email me](mailto:felix@erbridge.co.uk). I'm comfortable anywhere in the stack.
 
-Previous clients include:
+Previous clients / employers include:
 
 - IndigoMetrics
+- [MakieLab](https://mymakie.com/)
 - Peekeet
 - [UNMADE / KNYTTAN](https://unmade.com/)
