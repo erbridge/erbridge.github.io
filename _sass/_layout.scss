@@ -233,6 +233,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 175px;
     height: 250px;
     margin: 5px;
     background-color: $grey-0;
@@ -241,6 +242,7 @@
     overflow: hidden;
 
     @include media-query($on-palm) {
+      min-width: 160px;
       height: 220px;
     }
 
