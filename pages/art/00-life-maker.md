@@ -1,12 +1,12 @@
 ---
 title: "Life Maker"
 categories:
-  - misc
+  - art
 langtags:
   - Node.js
 frameworktags:
   - NodeGit
 otherexternalurls:
   GitHub: https://github.com/erbridge/life-maker
-permalink: /misc/life-maker/
+permalink: /art/life-maker/
 ---

@@ -1,7 +1,7 @@
 ---
 title: "WordScape"
 categories:
-  - misc
+  - art
 langtags:
   - JavaScript
   - Node.js
@@ -10,5 +10,5 @@ frameworktags:
 otherexternalurls:
   itch.io: http://erbridge.itch.io/wordscape
   GitHub: https://github.com/erbridge/wordscape
-permalink: /misc/wordscape/
+permalink: /art/wordscape/
 ---
