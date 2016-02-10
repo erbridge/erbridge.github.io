@@ -1,7 +1,7 @@
 ---
 title: "NQr"
 categories:
-  - misc
+  - tools
 langtags:
   - Python
 frameworktags:
@@ -9,5 +9,5 @@ frameworktags:
   - SQLite
 otherexternalurls:
   GitHub: https://github.com/erbridge/NQr
-permalink: /misc/nqr/
+permalink: /tools/nqr/
 ---

@@ -1,12 +1,12 @@
 ---
 title: "gotwit"
 categories:
-  - misc
+  - tools
 langtags:
   - Go
 frameworktags:
   - Anaconda
 otherexternalurls:
   GitHub: https://github.com/erbridge/gotwit
-permalink: /misc/gotwit/
+permalink: /tools/gotwit/
 ---

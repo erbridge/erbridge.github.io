@@ -1,7 +1,7 @@
 ---
 title: "Lime Text"
 categories:
-  - misc
+  - tools
 langtags:
   - Go
   - Python
@@ -10,5 +10,5 @@ frameworktags:
   - Qt
 otherexternalurls:
   GitHub: https://github.com/limetext
-permalink: /misc/lime-text/
+permalink: /tools/lime-text/
 ---

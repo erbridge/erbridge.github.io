@@ -1,7 +1,7 @@
 ---
 title: "Iris"
 categories:
-  - misc
+  - tools
 langtags:
   - JavaScript
 frameworktags:
@@ -10,5 +10,5 @@ frameworktags:
   - jQuery UI
 otherexternalurls:
   GitHub: https://github.com/erbridge/iris
-permalink: /misc/iris/
+permalink: /tools/iris/
 ---
