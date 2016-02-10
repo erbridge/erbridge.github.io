@@ -1,7 +1,7 @@
 ---
 title: "@wikipaedian"
 categories:
-  - art
+  - misc
 langtags:
   - Go
 frameworktags:
@@ -9,5 +9,5 @@ frameworktags:
 otherexternalurls:
   Twitter: https://twitter.com/wikipaedian
   GitHub: https://github.com/erbridge/wikipaedian
-permalink: /art/wikipaedian/
+permalink: /misc/wikipaedian/
 ---

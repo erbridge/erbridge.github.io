@@ -1,7 +1,7 @@
 ---
 title: "@elbownoises"
 categories:
-  - art
+  - misc
 langtags:
   - Go
 frameworktags:
@@ -9,5 +9,5 @@ frameworktags:
 otherexternalurls:
   Twitter: https://twitter.com/elbownoises
   GitHub: https://github.com/erbridge/elbownoises
-permalink: /art/elbownoises/
+permalink: /misc/elbownoises/
 ---

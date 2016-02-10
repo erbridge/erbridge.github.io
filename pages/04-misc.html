@@ -1,12 +1,12 @@
 ---
-title: Art
+title: Misc
 categories:
   - toplevel
-permalink: /art/
+permalink: /misc/
 ---
 <div class="project-list">
   {% for other_page in site.pages | sort "name" %}
-    {% if other_page.categories contains "art" %}
+    {% if other_page.categories contains "misc" %}
       <a class="project-list-item{% if other_page.imageurl %}{% else %} project-list-item--no-image{% endif %}" href="{{ other_page.url | prepend: site.baseurl }}">
         {% if other_page.imageurl %}
           <img class="no-border" src="{{ other_page.imageurl }}" alt="{{ other_page.title }}">

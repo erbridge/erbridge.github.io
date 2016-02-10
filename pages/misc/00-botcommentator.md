@@ -1,7 +1,7 @@
 ---
 title: "@BotCommentator"
 categories:
-  - art
+  - misc
 langtags:
   - Go
 frameworktags:
@@ -9,5 +9,5 @@ frameworktags:
 otherexternalurls:
   Twitter: https://twitter.com/BotCommentator
   GitHub: https://github.com/erbridge/botcommentator
-permalink: /art/botcommentator/
+permalink: /misc/botcommentator/
 ---
