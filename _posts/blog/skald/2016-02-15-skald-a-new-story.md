@@ -22,6 +22,6 @@ You play as a Viking traveller, sailing the rivers and coastlines of Scandinavia
 
 Beneath this is an exploration game. You've set out on a journey to find something you care about, be it your father's killer or a lost heirloom. the people you meet can give you clues as to where to go next, as well as hints of other things to do, but only if you can impress them with a story that jogs their memory. At the same time, you need to eat, and travelling through the rocky, icy water can be dangerous, and your boat can get damaged. To pay for food and repairs, you can pick up paying passengers, but they might not share your destination. Do you take a detour, because you need the money, but risk that your quarry gets further away, or do you set sail with a damaged boat and risk sinking it?
 
-The hope is that the game will become a fun way to engage people in creative writing, by layering storyteling on a game that tightly integrates with the stories you tell.
+The hope is that the game will become a fun way to engage people in creative writing, by layering storytelling on a game that tightly integrates with the stories you tell.
 
 Updates to come!
