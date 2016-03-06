@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font-family;
   font-weight: $heading-font-weight;
 
-  @include colour-with-glow($heading-colour);
+  @include colour-without-glow($heading-colour);
 }
 
 
@@ -99,7 +99,7 @@ a {
 
   &,
   &:visited {
-    @include colour-with-glow($link-colour);
+    @include colour-without-glow($link-colour);
   }
 
   &:hover {
@@ -113,8 +113,8 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $grey-3;
-  border-left: 4px solid $grey-2;
+  color: $light-grey;
+  border-left: 4px solid $grey;
   padding-left: $spacing-unit / 2;
   font-style: italic;
 
@@ -133,9 +133,9 @@ code {
   font-family: $mono-font-family;
   font-weight: $mono-font-weight;
   font-size: 18px;
-  border: 1px solid $grey-2;
+  border: 1px solid $grey;
   border-radius: 3px;
-  background-color: $grey-2;
+  background-color: $grey;
 }
 
 code {
@@ -210,11 +210,11 @@ pre {
     path {
 
       &:first-child {
-        fill: $text-colour;
+        fill: $dark-blue;
       }
 
       &:not(:first-child) {
-        fill: $base-background-colour;
+        fill: $light-blue;
       }
     }
   }

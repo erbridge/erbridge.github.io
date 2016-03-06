@@ -4,7 +4,7 @@
 
 
 
-@import url(//fonts.googleapis.com/css?family=Amatic+SC|Inconsolata|Raleway:300|Josefin+Slab);
+@import url(//fonts.googleapis.com/css?family=Dosis:400,300|Inconsolata|Raleway:300);
 
 
 
@@ -16,50 +16,42 @@ $base-line-height:  1.5;
 $small-font-size:   $base-font-size * 0.875;
 $small-line-height: $base-line-height * 0.875;
 
-$heading-font-family: 'Josefin Slab', serif;
+$heading-font-family: 'Dosis', sans-serif;
 $heading-font-weight: 400;
 
-$decorative-font-family: 'Amatic SC', cursive;
-$decorative-font-weight: 400;
+$decorative-font-family: 'Dosis', sans-serif;
+$decorative-font-weight: 300;
 
 $mono-font-family: 'Inconsolata', monospace;
 $mono-font-weight: 400;
 
 $spacing-unit: 30px;
 
-$grey-0: #1d1f21;
-$grey-1: #282a2e;
-$grey-2: #373b41;
-$grey-3: #969896;
-$grey-4: #b4b7b4;
-$grey-5: #c5c8c6;
-$grey-6: #e0e0e0;
-$grey-7: #ffffff;
+$grey:          #3f3636;
+$dark-grey:     darken($grey, 6%);
+$darkest-grey:  darken($grey, 11%);
+$light-grey:    lighten($grey, 35%);
+$lightest-grey: lighten($grey, 60%);
 
-$red:    #cc6666;
-$orange: #de935f;
-$yellow: #f0c674;
-$green:  #b5bd68;
-$aqua:   #8abeb7;
-$blue:   #81a2be;
-$purple: #b294bb;
-$brown:  #a3685a;
+$white: #ffffff;
 
-$text-colour:                $grey-5;
-$heading-colour:             $purple;
-$base-background-colour:     $grey-0;
-$light-background-colour:    $grey-1;
-$lightest-background-colour: $grey-2;
-$image-border-colour:        $grey-2;
-$link-colour:                $blue;
-$link-hover-colour:          $grey-3;
-$page-link-colour:           $red;
-$page-link-hover-colour:     $grey-0;
-$page-link-active-colour:    $yellow;
-$post-title-colour:          $orange;
-$site-title-colour:          $green;
+$light-blue: #71d5d4;
+$dark-blue:  #60ada9;
 
-$spinkit-spinner-color: $red;
+$text-colour:                $lightest-grey;
+$heading-colour:             $light-blue;
+$base-background-colour:     $darkest-grey;
+$light-background-colour:    $dark-grey;
+$lightest-background-colour: $grey;
+$image-border-colour:        $grey;
+$link-colour:                $light-blue;
+$link-hover-colour:          $white;
+$page-link-colour:           $light-blue;
+$page-link-hover-colour:     $white;
+$page-link-active-colour:    $white;
+$post-title-colour:          $white;
+
+$spinkit-spinner-color: $light-blue;
 
 $on-palm:   600px;
 $on-laptop: 800px;
@@ -81,6 +73,11 @@ $on-laptop: 800px;
 @mixin colour-with-glow($colour) {
   color: $colour;
   text-shadow: 0 0 5px rgba($colour, 0.5);
+}
+
+@mixin colour-without-glow($colour) {
+  color: $colour;
+  text-shadow: none;
 }
 
 

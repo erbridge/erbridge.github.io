@@ -11,27 +11,30 @@
 }
 
 .site-title {
-  font-family: $decorative-font-family;
-  font-weight: $decorative-font-weight;
-  font-size: 48px;
-  line-height: 56px;
-  letter-spacing: -1px;
-  margin-bottom: 0;
   float: left;
 
-  &,
-  &:visited {
-    @include colour-with-glow($site-title-colour);
-  }
+  svg {
+    height: 76px;
+    padding-top: 8px;
 
-  &:hover {
-    @include colour-with-glow($grey-0);
+    .st0 {
+      fill: $white;
+    }
+
+    .st1 {
+      fill: $light-blue;
+    }
+
+    .st2 {
+      fill: $dark-blue;
+    }
   }
 }
 
 .site-nav {
   float: right;
-  line-height: 56px;
+  line-height: 22px;
+  padding-top: 56px;
 
   .menu-icon {
     display: none;
@@ -40,24 +43,20 @@
   .page-link {
     font-family: $decorative-font-family;
     font-weight: $decorative-font-weight;
-    font-size: 26px;
+    font-size: 22px;
 
     &,
     &:visited {
-      @include colour-with-glow($page-link-colour);
+      @include colour-without-glow($page-link-colour);
     }
 
     &:hover {
       @include colour-with-glow($page-link-hover-colour);
-
-      @include media-query($on-palm) {
-        @include colour-with-glow($grey-2);
-      }
     }
 
     // Gaps between nav items, but not on the first one
     &:not(:first-child) {
-      margin-left: 20px;
+      margin-left: 15px;
     }
 
     &:focus,
@@ -65,32 +64,38 @@
 
       &,
       &:hover {
-        @include colour-with-glow($page-link-active-colour);
+        @include colour-without-glow($page-link-active-colour);
       }
     }
   }
 
   @include media-query($on-palm) {
     position: absolute;
-    top: 11px;
-    right: 15px;
+    top: 16px;
+    right: 16px;
+    padding-top: 0;
     background-color: $base-background-colour;
     border: 1px solid $light-background-colour;
     border-radius: 5px;
     text-align: right;
 
+    &:hover {
+      border-color: $dark-blue;
+      box-shadow: 0 0 10px 2px $dark-blue;
+    }
+
     .menu-icon {
       display: block;
       float: right;
-      width: 36px;
-      height: 26px;
+      width: 54px;
+      height: 39px;
       line-height: 0;
-      padding-top: 10px;
+      padding-top: 15px;
       text-align: center;
 
       > svg {
-        width: 18px;
-        height: 15px;
+        width: 27px;
+        height: 23px;
 
         path {
           fill: $page-link-colour;
@@ -140,7 +145,8 @@
   font-size: $small-font-size;
   line-height: $small-line-height;
   text-align: center;
-  color: $grey-3;
+
+  @include colour-without-glow($light-grey);
 }
 
 
@@ -171,7 +177,8 @@
 .post-meta {
   text-align: center;
   font-size: $small-font-size;
-  color: $grey-3;
+
+  @include colour-without-glow($light-grey);
 }
 
 .post-link {
@@ -196,7 +203,8 @@
     user-select: none;
 
     &:hover {
-      box-shadow: 0 0 10px 2px $image-border-colour;
+      border-color: $dark-blue;
+      box-shadow: 0 0 10px 2px $dark-blue;
     }
   }
 }
@@ -213,11 +221,11 @@
     user-select: none;
 
     &.tag--lang {
-      border-color: $red;
+      border-color: $light-blue;
     }
 
     &.tag--framework {
-      border-color: $green;
+      border-color: $dark-blue;
     }
   }
 }
@@ -236,7 +244,7 @@
     min-width: 175px;
     height: 250px;
     margin: 5px;
-    background-color: $grey-0;
+    background-color: $darkest-grey;
     border: 1px solid $image-border-colour;
     border-radius: 5px;
     overflow: hidden;
@@ -251,7 +259,8 @@
     }
 
     &:hover {
-      box-shadow: 0 0 10px 2px $image-border-colour;
+      border-color: $dark-blue;
+      box-shadow: 0 0 10px 2px $dark-blue;
     }
 
     img {
@@ -275,7 +284,7 @@
   letter-spacing: -1px;
   line-height: 1;
 
-  @include colour-with-glow($post-title-colour);
+  @include colour-without-glow($post-title-colour);
 
   @include media-query($on-laptop) {
     font-size: 36px;
