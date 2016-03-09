@@ -301,7 +301,7 @@
       img {
         opacity: 0.7;
         transform: translateZ(0);  // Fix for Chrome opacity transition bug.
-        border-radius: 5px;  // Fix for the Chrome bug fix.
+        border-radius: 4px;  // Fix for the Chrome bug fix.
 
         transition: opacity 0.25s;
       }
