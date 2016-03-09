@@ -30,13 +30,17 @@ $spacing-unit: 30px;
 $grey:          #3f3636;
 $dark-grey:     darken($grey, 6%);
 $darkest-grey:  darken($grey, 11%);
-$light-grey:    lighten($grey, 35%);
-$lightest-grey: lighten($grey, 60%);
+$light-grey:    #787272;
+$lightest-grey: #d8d7d7;
 
 $white: #ffffff;
 
-$light-blue: #71d5d4;
-$dark-blue:  #60ada9;
+$dark-blue:     #60ada9;
+$mid-blue:      #8fc5c3;
+$light-blue:    #71d5d4;
+$lightest-blue: #cfe6e5;
+
+$red: #ea7062;
 
 $text-colour:                $lightest-grey;
 $heading-colour:             $light-blue;
@@ -45,9 +49,9 @@ $light-background-colour:    $dark-grey;
 $lightest-background-colour: $grey;
 $image-border-colour:        $grey;
 $link-colour:                $light-blue;
-$link-hover-colour:          $white;
+$link-hover-colour:          $red;
 $page-link-colour:           $light-blue;
-$page-link-hover-colour:     $white;
+$page-link-hover-colour:     $red;
 $page-link-active-colour:    $white;
 $post-title-colour:          $white;
 

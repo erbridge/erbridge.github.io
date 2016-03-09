@@ -86,8 +86,8 @@
     text-align: right;
 
     &:hover {
-      border-color: $dark-blue;
-      box-shadow: 0 0 10px 2px $dark-blue;
+      border-color: $red;
+      box-shadow: 0 0 10px 2px $red;
     }
 
     .menu-icon {
@@ -209,8 +209,8 @@
     user-select: none;
 
     &:hover {
-      border-color: $dark-blue;
-      box-shadow: 0 0 10px 2px $dark-blue;
+      border-color: $red;
+      box-shadow: 0 0 10px 2px $red;
     }
   }
 }
@@ -265,8 +265,12 @@
     }
 
     &:hover {
-      border-color: $dark-blue;
-      box-shadow: 0 0 10px 2px $dark-blue;
+      border-color: $red;
+      box-shadow: 0 0 10px 2px $red;
+
+      h3 {
+        color: $red;
+      }
     }
 
     img {

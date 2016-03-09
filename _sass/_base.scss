@@ -205,6 +205,17 @@ pre {
       width: 49px;
       height: 49px;
       padding: 0;
+
+      path {
+
+        &:first-child {
+          fill: $red;
+        }
+
+        &:not(:first-child) {
+          fill: $white;
+        }
+      }
     }
 
     path {
