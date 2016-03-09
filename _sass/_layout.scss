@@ -15,15 +15,18 @@
 
   svg {
     height: 76px;
-    padding: 8px 0 8px 2px;
+    padding: 8px 0;
     vertical-align: middle;
 
     &:hover {
-      height: 78px;
-      padding: 8px 0 6px 0;
+      .st0 {
+        fill: $red;
+      }
     }
 
     .st0 {
+      transition: fill 0.25s;
+
       fill: $white;
     }
 
@@ -84,6 +87,8 @@
     border: 1px solid $light-background-colour;
     border-radius: 5px;
     text-align: right;
+
+    transition: border-color 0.25s, box-shadow 2s;
 
     &:hover {
       border-color: $red;
@@ -208,6 +213,8 @@
     border-radius: 5px;
     user-select: none;
 
+    transition: border-color 0.25s, box-shadow 2s;
+
     &:hover {
       border-color: $red;
       box-shadow: 0 0 10px 2px $red;
@@ -254,6 +261,8 @@
     border: 1px solid $image-border-colour;
     border-radius: 5px;
     overflow: hidden;
+
+    transition: border-color 0.25s, box-shadow 2s;
 
     @include media-query($on-palm) {
       min-width: 160px;

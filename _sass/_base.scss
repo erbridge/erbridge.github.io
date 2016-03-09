@@ -24,6 +24,9 @@ body {
   overflow-y: scroll;
 }
 
+p {
+  transition: color 0.25s;
+}
 
 
 /**
@@ -86,6 +89,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font-family;
   font-weight: $heading-font-weight;
 
+  transition: color 0.25s;
+
   @include colour-without-glow($heading-colour);
 }
 
@@ -96,6 +101,8 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
   text-decoration: none;
+
+  transition: color 0.25s, text-shadow 2s;
 
   &,
   &:visited {
@@ -164,6 +171,7 @@ pre {
   margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
+
   @extend %clearfix;
 
   @include media-query($on-laptop) {
@@ -201,10 +209,10 @@ pre {
     padding: 2px;
     vertical-align: middle;
 
+    transition: transform 2s;
+
     &:hover {
-      width: 49px;
-      height: 49px;
-      padding: 0;
+      transform: rotate(720deg);
 
       path {
 
@@ -219,6 +227,7 @@ pre {
     }
 
     path {
+      transition: fill 0.25s;
 
       &:first-child {
         fill: $dark-blue;
