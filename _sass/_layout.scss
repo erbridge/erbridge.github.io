@@ -262,7 +262,7 @@
     border-radius: 5px;
     overflow: hidden;
 
-    transition: border-color 0.25s, box-shadow 2s;
+    transition: background-color 0.25s, border-color 0.25s, box-shadow 2s;
 
     @include media-query($on-palm) {
       min-width: 160px;
@@ -285,6 +285,26 @@
     img {
       height: 100%;
       max-width: none;
+    }
+
+    @media (hover:hover) {
+      background-color: lighten($darkest-grey, 2%);
+
+      &:hover {
+        background-color: $darkest-grey;
+
+        img {
+          opacity: 1;
+        }
+      }
+
+      img {
+        opacity: 0.7;
+        transform: translateZ(0);  // Fix for Chrome opacity transition bug.
+        border-radius: 5px;  // Fix for the Chrome bug fix.
+
+        transition: opacity 0.25s;
+      }
     }
   }
 }
