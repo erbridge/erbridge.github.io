@@ -15,3 +15,6 @@ otherexternalurls:
 imageurl: /images/games/fatal-attraction-title.png
 permalink: /games/fatal-attraction/
 ---
+Fatal Attraction is a gravity based arcade game. Rotate your ship and use your gun to change the gravity source, but try not to crash into anything.
+
+Made for [Ludum Dare 32](http://ludumdare.com/compo/ludum-dare-32/?action=preview&uid=34508).
