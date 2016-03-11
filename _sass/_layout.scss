@@ -200,8 +200,13 @@
 .store-list {
   text-align: center;
 
-  img:hover {
-    box-shadow: 0 0 10px 2px $image-border-colour;
+  img {
+    border-radius: 5px;
+    transition: box-shadow 2s;
+
+    &:hover {
+      box-shadow: 0 0 10px 2px $red;
+    }
   }
 
   .store-button {
