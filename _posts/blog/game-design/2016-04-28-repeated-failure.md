@@ -1,6 +1,6 @@
 ---
 title: "Repeated Failure"
-date: 2016-04-28 14:26
+date: 2016-04-28 14:00
 categories:
   - blog
   - gamedev
