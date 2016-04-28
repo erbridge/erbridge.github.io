@@ -13,7 +13,7 @@ hashtags:
 description: >
   Punish your players.
 ---
-Lately I have been thinking about introductions to games, particularly learning to play through repeated failure. Most games make every effort to make sure the player is completely comfortable with how to play before they start. They go through tutorials, are eased into puzzles or enemy encounters, guided by level design or pop-up advice. Some games stand out as doing things differently. The most obvious examples are the Dark Souls games, where a player is expected to repeatedly throw themselves as a bone wall, as they learn the tricks to defeating encounters.
+Lately I have been thinking about introductions to games, particularly learning to play through repeated failure. Most games make every effort to make sure the player is completely comfortable with how to play before they start. They go through tutorials, are eased into puzzles or enemy encounters, guided by level design or pop-up advice. Some games stand out as doing things differently. The most obvious examples are the Dark Souls games, where a player is expected to repeatedly throw themselves against a bone wall, as they learn the tricks to defeating encounters.
 
 [![You Died!](/images/blog/dark-souls-you-died.jpg)](/images/blog/dark-souls-you-died.jpg){:target="_blank"}
 
