@@ -1,12 +1,12 @@
 ---
-title: "Roleplaying"
+title: "Roleplaying Journals"
 categories:
   - blog
-permalink: /blog/roleplaying/
+permalink: /blog/journals/
 ---
 <div class="project-list">
   {% for post in site.posts reversed %}
-    {% if post.categories contains "blog" and post.categories contains "roleplaying" %}
+    {% if post.categories contains "blog" and post.categories contains "roleplaying" and post.categories contains "journal" %}
       <a class="project-list-item project-list-item--no-image" href="{{ post.url | prepend: site.baseurl }}">
 
         <h3>{{ post.title }}</h3>
