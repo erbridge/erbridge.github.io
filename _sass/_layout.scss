@@ -282,7 +282,8 @@
       border-color: $red;
       box-shadow: 0 0 10px 2px $red;
 
-      h3 {
+      h3,
+      h4 {
         color: $red;
       }
     }
@@ -333,6 +334,10 @@
   @include media-query($on-laptop) {
     font-size: 36px;
   }
+}
+
+.post-subtitle {
+  @include colour-without-glow($post-title-colour);
 }
 
 .post-content {

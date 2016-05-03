@@ -8,7 +8,13 @@ permalink: /fiction/
   {% for post in site.posts reversed %}
     {% if post.categories contains "fiction" %}
       <a class="project-list-item project-list-item--no-image" href="{{ post.url | prepend: site.baseurl }}">
+
         <h3>{{ post.title }}</h3>
+
+        {% if post.subtitle %}
+          <h4>{{ post.subtitle }}</h4>
+        {% endif %}
+
       </a>
     {% endif %}
   {% endfor %}
