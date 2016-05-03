@@ -1,0 +1,16 @@
+---
+title: "Skald"
+categories:
+  - blog
+permalink: /blog/skald/
+---
+<div class="project-list">
+  {% for post in site.posts reversed %}
+    {% if post.categories contains "blog" and post.categories contains "skald" %}
+      <a class="project-list-item project-list-item--no-image" href="{{ post.url | prepend: site.baseurl }}">
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.date | date: "%-d %B %Y" }}</p>
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>

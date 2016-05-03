@@ -5,7 +5,7 @@ categories:
 frameworktags:
   - Unreal Engine 4
 otherexternalurls:
-  Blog: /blog/2016/02/15/skald-a-new-story/
+  Blog: /blog/skald/
 imageurl: /images/games/skald-screenshot.png
 permalink: /games/skald/
 ---

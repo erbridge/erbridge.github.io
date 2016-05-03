@@ -13,7 +13,7 @@ hashtags:
 description: >
   Skald: kick starting the project.
 ---
-[Luke](http://www.luketovee.com/){:target="_blank"} and I spent a recent weekend jamming on [*Skald*](/blog/2016/02/15/skald-a-new-story/), to give it a kick start and build some momentum. It went really well!
+[Luke](http://www.luketovee.com/){:target="_blank"} and I spent a recent weekend jamming on [*Skald*](/blog/skald/), to give it a kick start and build some momentum. It went really well!
 
 [![Landscape](/images/blog/skald/1/landscape.gif)](/images/blog/skald/1/landscape.gif){:target="_blank"}
 
