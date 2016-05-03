@@ -27,11 +27,11 @@ The zombies were defeated, but we were heavily wounded. It was agreed that we sh
 
 We returned to town, shaken and exhausted, and questioned the cleric. He was clueless, and I made sure he was aware of it. I regret the choice of my words, but I stand by the message. How something like this could go unnoticed for so long... it boggles my mind. Eventually, we questioned him on the church itself, and uncovered an inscription which even he had not known of in all the time he'd lived there. Of course this only fuelled my anger, but nonetheless the inscription offered insight into the situation.
 
-"Take heed, for undying iniquity rests within these walls.
-Upon this site the sceptre of united faith fulfilled destiny.
-The dread priest, Akruel, shall rule no longer.
-We, the faiths of the world, place this stone so none shall ever forget the bloodshed.
-Take heed, lest evil awaken!"
+> Take heed, for undying iniquity rests within these walls.
+> Upon this site the sceptre of united faith fulfilled destiny.
+> The dread priest, Akruel, shall rule no longer.
+> We, the faiths of the world, place this stone so none shall ever forget the bloodshed.
+> Take heed, lest evil awaken!
 
 After much discussion and deciding that we should continue to explore these catacombs and perhaps eradicate the undead housed there, Almery helped us to restore our health and put us up for the night in the usually-closed inn in town. Luckily there was space there for us to have separate rooms. Locked doors are a luxury I rarely do away with, when given the opportunity.
 
