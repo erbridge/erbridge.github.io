@@ -6,7 +6,7 @@ author: "Oscar Laurie von Massenbach"
 categories:
   - blog
   - roleplaying
-  - the-stony-lands
+  - splinters-of-faith
   - journal
 ---
 Upon meeting with Sarnau, I also encountered a trio of rather interesting individuals: A death priest of some description - I usually avoid weird cult types like this, but he seems agreeable enough; a man whose only interests appeared to be gold and "crushing bones"; and riding in Bonecrusher's backpack, strangest of all, a semi-civilised kobold with a penchant for setting things on fire. He seems to believe that he's a dragon, or will become one, perhaps. I've never seen a dragon, but I'm fairly sure they're a bit bigger. And have better dress sense.

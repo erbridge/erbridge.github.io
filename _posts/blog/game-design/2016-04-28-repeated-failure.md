@@ -4,8 +4,8 @@ date: 2016-04-28 14:00
 categories:
   - blog
   - gamedev
-  - gamejams
-  - nordicgamejam
+  - game-jams
+  - nordic-game-jam
 hashtags:
   - NGJ16
   - gamedev
