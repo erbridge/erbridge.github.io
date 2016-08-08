@@ -13,7 +13,9 @@ Thinking about hiring me? Send me a [tweet](https://twitter.com/erbridge){:targe
 
 Previous clients / employers include:
 
+- [Harriman Steel](http://www.harrimansteel.com/){:target="_blank"}
 - IndigoMetrics
 - [MakieLab](https://mymakie.com/){:target="_blank"}
+- [Pamoja Education](http://www.pamojaeducation.com/){:target="_blank"}
 - Peekeet
 - [UNMADE / KNYTTAN](https://unmade.com/){:target="_blank"}
