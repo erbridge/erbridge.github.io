@@ -5,7 +5,8 @@ categories:
 permalink: /tools/
 ---
 <div class="project-list">
-  {% for other_page in site.pages | sort "name" %}
+  {% assign pages = site.pages | sort: "name" %}
+  {% for other_page in pages %}
     {% if other_page.categories contains "tools" %}
       <a class="project-list-item{% if other_page.imageurl %}{% else %} project-list-item--no-image{% endif %}" href="{{ other_page.url | prepend: site.baseurl }}">
         {% if other_page.imageurl %}
