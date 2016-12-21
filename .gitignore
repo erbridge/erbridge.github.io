@@ -1,5 +1,3 @@
-*.sublime-workspace
-
 _site
 .sass-cache
 .bundle
