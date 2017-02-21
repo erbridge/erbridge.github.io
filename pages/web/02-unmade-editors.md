@@ -7,8 +7,10 @@ langtags:
   - JavaScript
 frameworktags:
   - Knockout
+  - React
+  - Redux
 otherexternalurls:
-  Website: https://unmade.com/
-imageurl: /images/web/unmade-ribbon.png
+  Website: https://umd.studio/knitwear/
+imageurl: /images/web/unmade-editors.png
 permalink: /web/unmade-editors/
 ---
