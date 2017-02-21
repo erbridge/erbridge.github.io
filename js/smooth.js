@@ -15,7 +15,6 @@ var smoothState = $('#main').smoothState({
     duration: 500,
     render: function($container) {
       $body.css('cursor', 'wait');
-      $body.find('a').css('cursor', 'wait');
 
       $container.addClass('animation-scene--is-exiting');
 
@@ -48,7 +47,6 @@ var smoothState = $('#main').smoothState({
         $container.html($content);
 
         $body.css('cursor', 'auto');
-        $body.find('a').css('cursor', 'auto');
       };
 
       if ($spinner.hasClass('animation-scene--is-entering')) {

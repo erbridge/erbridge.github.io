@@ -44,6 +44,7 @@
   float: right;
   line-height: 22px;
   padding-top: 56px;
+  cursor: default;
 
   .menu-icon {
     display: none;
@@ -53,6 +54,7 @@
     font-family: $decorative-font-family;
     font-weight: $decorative-font-weight;
     font-size: 22px;
+    cursor: pointer;
 
     &,
     &:visited {
@@ -70,6 +72,7 @@
 
     &:focus,
     &.page-link--active {
+      cursor: default;
 
       &,
       &:hover {
