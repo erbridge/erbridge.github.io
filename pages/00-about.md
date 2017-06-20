@@ -18,4 +18,5 @@ Previous clients / employers include:
 - [MakieLab](https://mymakie.com/){:target="_blank"}
 - [Pamoja Education](http://www.pamojaeducation.com/){:target="_blank"}
 - Peekeet
+- [R. E. Michalak](https://remichalak.com/){:target="_blank"}
 - [UNMADE](https://unmade.com/){:target="_blank"}
