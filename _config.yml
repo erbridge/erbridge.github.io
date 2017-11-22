@@ -57,7 +57,6 @@ kramdown:
   hard_wrap: true
 
 exclude:
-  - "*.sublime-project"
   - CNAME
   - README.md
   - bower.json
