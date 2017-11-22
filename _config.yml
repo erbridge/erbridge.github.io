@@ -1,11 +1,11 @@
 title:       erbridge
-email:       felix@erbridge.co.uk
-description: "Felix Laurie von Massenbach: freelance game / web developer, programmer, fixer, roleplayer."
+email:       f@erbridge.co.uk
+description: erbridge: freelance game / web developer available for hire
 
 name: erbridge
 author:
-  name: Felix Laurie von Massenbach
-  email: felix@erbridge.co.uk
+  name:  erbridge
+  email: f@erbridge.co.uk
 
 baseurl: ""
 url:     http://erbridge.co.uk
@@ -21,7 +21,7 @@ contact-methods:
     url:   https://www.linkedin.com/in/erbridge
     class: linkedin
   - title: Email
-    url:   mailto:felix@erbridge.co.uk
+    url:   mailto:f@erbridge.co.uk
     class: email
   - title: RSS
     url:   /feed.xml
@@ -39,13 +39,13 @@ defaults:
       type: posts
     values:
       layout: post
-      author: Felix Laurie von Massenbach
+      author: erbridge
   - scope:
       path: ""
       type: drafts
     values:
       layout: post
-      author: Felix Laurie von Massenbach
+      author: erbridge
 
 gems:
   - jekyll-feed

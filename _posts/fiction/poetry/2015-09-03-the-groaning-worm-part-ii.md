@@ -35,7 +35,7 @@ Is the God of the universe. Consider that!
 
 # The Groaning Worm (Part II)
 
-#### Felix Laurie von Massenbach
+#### erbridge
 
 The magicians and phonetic monsters
 Have their ministries; they waste alongside the terror,
